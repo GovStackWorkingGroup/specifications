@@ -39,7 +39,7 @@ Messaging event is the (single) act of asynchronous information transfer between
 
 Is the protocol enabling the Messaging BB to communicate and transfer data between the endpoints. 
 
-NB! In its initial versions, GovStack Messaging BB is using [Matrix/Elements ](https://matrix.org/)protocol as a reference point for creating GovStack Messaging BB protocol. 
+NB! In its initial versions, GovStack Messaging BB is using [Matrix/Elements](https://matrix.org/) protocol as a reference point for creating GovStack Messaging BB protocol. 
 
 **Communication channel**
 
