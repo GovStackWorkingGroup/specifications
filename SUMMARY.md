@@ -1,7 +1,6 @@
 # Table of contents
 
 * [GovStack](README.md)
-* [Contributing](contributing.md)
 * [Code of Conduct](code-of-conduct.md)
 * [Architecture and Nonfunctional Requirements](architecture-and-nonfunctional-requirements/README.md)
   * [2 Description](architecture-and-nonfunctional-requirements/description.md)
