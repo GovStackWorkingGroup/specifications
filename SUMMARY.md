@@ -25,3 +25,12 @@
 ## Building Blocks
 
 * [About Building Blocks](building-blocks/about-building-blocks.md)
+* [Information Mediation](building-blocks/information-mediation.md)
+* [Registration](building-blocks/registration.md)
+* [Digital Registries](building-blocks/digital-registries.md)
+* [Identity](building-blocks/identity.md)
+* [Payments](building-blocks/payments.md)
+* [Consent](building-blocks/consent.md)
+* [Workflow](building-blocks/workflow.md)
+* [Messaging](building-blocks/messaging.md)
+* [Scheduling](building-blocks/scheduling.md)
