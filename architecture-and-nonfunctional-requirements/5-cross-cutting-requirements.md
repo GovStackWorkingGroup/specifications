@@ -121,43 +121,39 @@ Each block must be composed of open-source software unless there are no alternat
 * Each block MUST be ready to be deployed as independent Docker images, with complete source code and build instructions committed to GitHub.
 * A block may be composed with Kubernetes or docker compose. All build files must be included alongside the source code.
 
-## 5.31 MUST Closely Model the Organization/Roles Being Automated
-
-See [https://en.wikipedia.org/wiki/Conway%27s\_law](https://en.wikipedia.org/wiki/Conway's\_law)
-
-## 5.32 MUST Use Standardized Configuration
+## 5.31 MUST Use Standardized Configuration
 
 * Configuration MUST only happen through environment variables or secrets
 * Allows visual construction of blocks, perhaps with domain modeling tools
 
-## 5.33 MUST Use Standardized Data Formats for Interchange
+## 5.32 MUST Use Standardized Data Formats for Interchange
 
 JSON is used for data models/services. See [https://www.json.org/json-en.html](https://www.json.org/json-en.html)
 
-## 5.34 MUST Use Existing Standards for Data Interchange, Where Available
+## 5.33 MUST Use Existing Standards for Data Interchange, Where Available
 
 If an existing standard is available, it should be used, e.g. DICOM/Hl7/FHIR for healthcare. TMForum has a large library of standardized APIs and data models that can be used.
 
-## 5.35 I/O Sanitization MUST be Used
+## 5.34 I/O Sanitization MUST be Used
 
 * See an example [https://json-schema.org/ ](https://json-schema.org)for JSON data.
 * Follows Postel’s law: be liberal in what you consume but strict in what you emit
 
-## 5.36 MUST Include Machine-Readable API descriptions
+## 5.35 MUST Include Machine-Readable API descriptions
 
 * Each block’s service APIs are defined using a standardized machine-readable language. External APIs are described using the OpenAPI 3.0 specification for APIs: [https://swagger.io/docs/specification/about/](https://swagger.io/docs/specification/about/)
 
-## 5.37 MUST Provide a Compliance Test Kit
+## 5.36 MUST Provide a Compliance Test Kit
 
 Must provide a runnable [https://www.postman.com/](https://www.postman.com) to ensure compliance
 
 Part of building block design
 
-## 5.38 MUST Use Web Hooks for Callbacks
+## 5.37 MUST Use Web Hooks for Callbacks
 
-## 5.39 MUST be Internationalizable
+## 5.38 MUST be Internationalizable
 
-## 5.40 MUST Follow Best Practices for Public Code
+## 5.39 MUST Follow Best Practices for Public Code
 
 See [https://standard.publiccode.net/](https://standard.publiccode.net) and practices outlined here:
 
@@ -176,23 +172,23 @@ See [https://standard.publiccode.net/](https://standard.publiccode.net) and prac
 * [Use a coherent style](https://standard.publiccode.net/criteria/style.html)
 * [Pay attention to codebase maturity](https://standard.publiccode.net/criteria/advertise-maturity.html)
 
-## 5.41 MUST Follow Strict Requirements Around NTP/RTC Synchronization
+## 5.40 MUST Follow Strict Requirements Around NTP/RTC Synchronization
 
-## 5.42 If an API Response will Take Longer than 5 Seconds, you SHOULD Return a Ticket with a Suggested Callback Time that is Resolved by Polling
+## 5.41 If an API Response will Take Longer than 5 Seconds, you SHOULD Return a Ticket with a Suggested Callback Time that is Resolved by Polling
 
-## 5.43 MUST use STDOUT/ERR for Logging, to be Captured by the Docker/Container Environment
+## 5.42 MUST use STDOUT/ERR for Logging, to be Captured by the Docker/Container Environment
 
 * Each block MUST be ready to be deployed as independent Docker images, with complete source code and build instructions committed to GitHub
 * A block may be composed with Kubernetes or docker compose. All build files must be included alongside the source code.
 
-## 5.44 SHOULD Include Kubernetes or Ansible Scripts
+## 5.43 SHOULD Include Kubernetes or Ansible Scripts
 
 In addition to Docker Compose for more efficient and scalable deployments. This will make individual components of the building block independently scalable and make building blocks less monolithic and more efficient,
 
-## 5.45 SHOULD Comply with GDPR Principles
+## 5.44 SHOULD Comply with GDPR Principles
 
 Include the right to be forgotten account deletion), privacy requirements to protect the rights of individuals, etc. Note that these requirements may vary by region.
 
-## 5.46 MUST Implement Existing Standards Where Possible
+## 5.45 MUST Implement Existing Standards Where Possible
 
 Building blocks and building block solutions MUST leverage existing standards, especially those listed in the [Standards section](6-standards.md) below.
