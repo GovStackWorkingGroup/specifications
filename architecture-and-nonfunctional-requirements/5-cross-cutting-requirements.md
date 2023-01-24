@@ -59,10 +59,6 @@ As shown here: e.g. /api/v1 and /api/v2
 
 See [https://semver.org/](https://semver.org/)
 
-## 5.17 MUST Provide Configuration Only through the Environment
-
-No configuration in code, use environment variables wherever possible
-
 ## 5.18 MUST Include Clearly-Defined Key Rotation Policies
 
 Some blocks may require the use of security keys. Those that do must have clearly defined key rotation policies to enhance security
