@@ -176,9 +176,9 @@ See [https://standard.publiccode.net/](https://standard.publiccode.net) and prac
 
 ## 5.41 If an API Response will Take Longer than 5 Seconds, you SHOULD Return a Ticket with a Suggested Callback Time that is Resolved by Polling
 
-## 5.42 MUST use STDOUT/ERR for Logging, to be Captured by the Docker/Container Environment
+## 5.42 MUST be deployable as a container
 
-* Each block MUST be ready to be deployed as independent Docker images, with complete source code and build instructions committed to GitHub
+* Each building block MUST be ready to be deployed as independent container images. Source code and build instructions SHOULD be committed to a public code repository where possible.
 * A block may be composed with Kubernetes or docker compose. All build files must be included alongside the source code.
 
 ## 5.43 SHOULD Include Kubernetes or Ansible Scripts
