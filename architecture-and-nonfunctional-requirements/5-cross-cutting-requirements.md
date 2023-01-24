@@ -137,13 +137,13 @@ If an existing standard is available, it should be used, e.g. DICOM/Hl7/FHIR for
 
 ## 5.35 MUST Include Machine-Readable API descriptions
 
-* Each block’s service APIs are defined using a standardized machine-readable language. External APIs are described using the OpenAPI 3.0 specification for APIs: [https://swagger.io/docs/specification/about/](https://swagger.io/docs/specification/about/)
-
 ## 5.36 MUST Provide a Compliance Test Kit
 
-Must provide a runnable [https://www.postman.com/](https://www.postman.com) to ensure compliance
+Each block’s service APIs are defined using a standardized machine-readable language. External APIs are described using the OpenAPI 3.0 specification for APIs: [https://swagger.io/docs/specification/about/](https://swagger.io/docs/specification/about/)
 
-Part of building block design
+## 5.37 MAY Provide a Compliance Test Mock/Example Implementation
+
+A building block MAY provide a mock testing implementation of API functionality to show example endpoints and data payloads. See [https://github.com/GovStackWorkingGroup/bb-template/tree/main/examples](https://github.com/GovStackWorkingGroup/bb-template/tree/main/examples) for additional information.
 
 ## 5.37 MUST Use Web Hooks for Callbacks
 
