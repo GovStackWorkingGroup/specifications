@@ -33,4 +33,4 @@
 * [Consent](building-blocks/consent.md)
 * [Workflow](building-blocks/workflow.md)
 * [Messaging](building-blocks/messaging.md)
-* [Scheduling](building-blocks/scheduling.md)
+* [Scheduler](building-blocks/scheduler.md)

@@ -2,6 +2,4 @@
 
 Enables unique identification and authentication of users, organizations and other entities.
 
-{% content-ref url="identity.md" %}
-[identity.md](identity.md)
-{% endcontent-ref %}
+Read more about the [Identity Building Block](https://govstack.gitbook.io/bb-identity)...
