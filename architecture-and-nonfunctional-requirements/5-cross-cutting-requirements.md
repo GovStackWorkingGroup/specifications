@@ -22,16 +22,15 @@ See [https://www.tiobe.com/tiobe-index/](https://www.tiobe.com/tiobe-index/)
 
 ## 5.6 MUST Use API-only Based Decoupling <a href="#_8vqx9ylj3l5" id="_8vqx9ylj3l5"></a>
 
-## 5.7 SHOULD Follow the Amazon API Mandate
+## 5.7 MUST Communicate with other BBs only via API
 
-See [https://api-university.com/blog/the-api-mandate/](https://api-university.com/blog/the-api-mandate/)
+Paraphrased from the Amazon API Mandate: [https://api-university.com/blog/the-api-mandate/](https://api-university.com/blog/the-api-mandate/)
 
-1. All teams will henceforth expose their data and functionality through service interfaces.
-2. Teams must communicate with each other through these interfaces.
+1. All BBs must expose their data and functionality through service interfaces (APIs).
+2. Building Blocks communicate with each other through these interfaces.
 3. There will be no other form of interprocess communication allowed: no direct linking, no direct reads of another team’s data store, no shared-memory model, no back-doors whatsoever. The only communication allowed is via service interface calls over the network.
-4. It doesn’t matter what technology is used \[ed: internally]. HTTP, Corba, Pubsub, custom protocols — doesn’t matter.
+4. It doesn’t matter what technology is used. HTTP, Corba, Pubsub, custom protocols — doesn’t matter.
 5. All service interfaces, without exception, must be designed from the ground up to be externalizable. That is to say, the team must plan and design to be able to expose the interface to developers in the outside world. No exceptions.
-6. Anyone who doesn’t do this will be fired. Is this enforcable?
 
 ## 5.8 GET and PUT APIs MUST be Idempotent
 
