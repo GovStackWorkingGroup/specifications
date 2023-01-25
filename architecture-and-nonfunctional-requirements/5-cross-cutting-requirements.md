@@ -118,10 +118,9 @@ Each block must be composed of open-source software unless there are no alternat
 * Each block MUST be ready to be deployed as independent Docker images, with complete source code and build instructions committed to GitHub.
 * A block may be composed with Kubernetes or docker compose. All build files must be included alongside the source code.
 
-## 5.31 MUST Use Standardized Configuration
+## 5.31 MUST Use Secure Configuration
 
-* Configuration MUST only happen through environment variables or secrets
-* Allows visual construction of blocks, perhaps with domain modeling tools
+Configuration MUST be done using secure processes, such as environment variables or a secure secret store
 
 ## 5.32 MUST Use Standardized Data Formats for Interchange
 
