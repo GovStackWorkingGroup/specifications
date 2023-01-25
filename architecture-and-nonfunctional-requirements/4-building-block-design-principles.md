@@ -64,5 +64,5 @@ Each use case is composed of a collection of modules, or building blocks. As you
   * Low-reliability connectivity
 * Easily scalable for high availability and reliability
 * API-only based decoupling
-* Asynchronous communications pattern decoupled through rooms is ideal
+* Asynchronous decoupled communications patterns (such as PubSub) may be used
 * Eventual consistency for data
