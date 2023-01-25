@@ -6,8 +6,6 @@ GovStack aims to provide a reference architecture for digital governance softwar
 
 This will accelerate the collaborative development of best-of-breed digital public goods, enhancing efficiency and transparency across the world - especially in low-resource settings.
 
-Once an initial reference architecture is available, it can be deployed in a sandbox environment to demonstrate its utility.
-
 ## 2.1 Considerations for Low-Resource Settings
 
 Low-resource settings have unique constraints that must be considered.
@@ -58,7 +56,7 @@ See [https://drive.google.com/file/d/1Ix2A3W\_vpvaRvKyek524kCuB5MKcRFd3/view?usp
 
 Building blocks are software modules that can be deployed and combined in a standardized manner. Each building block is capable of working independently, but they can be combined to do much more:
 
-![](<../../.gitbook/assets/image5 (2).png>)
+![](<../.gitbook/assets/image5 (2).png>)
 
 Building blocks are composable, interoperable software modules that can be used across a variety of use cases. They are standards-based, open source and designed for scale.
 
@@ -71,7 +69,7 @@ Blocks exchange data using lightweight, human-readable data that can easily be e
 Building blocks should meet the criteria of the Digital Square Global Goods maturity model for Global Utility, Community and Software Quality. See\
 [https://www.google.com/url?q=https://wiki.digitalsquare.io/index.php/Global\_Goods\_Maturity\&sa=D\&source=editors\&ust=1614177377366000\&usg=AOvVaw3rKLBBw5qDajPOetkDdmTv](https://wiki.digitalsquare.io/index.php/Global\_Goods\_Maturity) for details.
 
-![](../../.gitbook/assets/image3.png)
+![](../.gitbook/assets/image3.png)
 
 ## 2.4 Building Blocks Working Together
 
@@ -138,7 +136,7 @@ Adapters are responsible for data and protocol translation, authentication, and 
 
 Here we can see two adapters, one for patient records and another for a tax registry:
 
-![(github repo / image - link)](../../.gitbook/assets/j2.png)
+![(github repo / image - link)](../.gitbook/assets/j2.png)
 
 In this example, an HL7 2.5 adapter connects an existing application’s patient record registry, and an SAP SOAP adapter connects an existing applications tax registry to GovStack. Both adapters provide services that are available for use by other building blocks.
 
@@ -150,7 +148,7 @@ Talk about terminology management as part of workflow/adapters, e.g. [https://op
 
 API gateways connect citizens and existing applications to GovStack building blocks. Here, a public API gateway provides GovStack resources to citizens, while a private API gateway provides GovStack resources to existing applications:
 
-![(github repo / image - link)](<../../.gitbook/assets/image4 (4).png>)
+![(github repo / image - link)](<../.gitbook/assets/image4 (4).png>)
 
 In this example, a hospital information management system can use the Citizen ID/Auth building block to authenticate a patient’s foundational ID. Likewise, citizens access government services via external mobile or web applications calling through a shared public API gateway.
 
@@ -160,6 +158,6 @@ Any number of API gateways can be added to expose various GovStack services to u
 
 This shows a complete GovStack deployment with API gateways for citizen access via web or mobile and for existing applications to be able to call GovStack APIs on demand. The workflow building block is used as an adapter, exposing existing applications as GovStack resources via OpenAPI:
 
-![(open in https://app.diagrams.net/)](<../../.gitbook/assets/image6 (2).png>)
+![(open in https://app.diagrams.net/)](<../.gitbook/assets/image6 (2).png>)
 
 Here, citizens and existing applications are provided API access for requests into GovStackvia a common API Gateway, while the workflow building block/adapter provides outgoing API access to existing applications from GovStack building blocks.
