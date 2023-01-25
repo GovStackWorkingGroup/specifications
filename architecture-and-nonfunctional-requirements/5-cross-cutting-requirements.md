@@ -16,9 +16,11 @@ See [https://drive.google.com/drive/u/2/folders/1eS20wt\_PP7CoJEOvzagYDTTMCfmv3y
 
 Nothing SHALL be used in a block that has an EOL of less than 5 years.
 
-## 5.5 MUST Only Use TIOBE Top 25 Languages
+## 5.5 SHOULD Only Use TIOBE Top 25 Languages
 
 See [https://www.tiobe.com/tiobe-index/](https://www.tiobe.com/tiobe-index/)
+
+Where possible, building blocks SHOULD be written using commonly used languages to ensure ongoing maintenance and support are as easy as possible. Building blocks MAY leverage less common languages, such as shell scripting where needed.
 
 ## 5.6 MUST Use API-only Based Decoupling <a href="#_8vqx9ylj3l5" id="_8vqx9ylj3l5"></a>
 
