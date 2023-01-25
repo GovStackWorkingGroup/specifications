@@ -64,7 +64,9 @@ See [https://semver.org/](https://semver.org/)
 
 Some blocks may require the use of security keys. Those that do must have clearly defined key rotation policies to enhance security
 
-## 5.19 Documentation MUST be Generated from Code and/or Checked in Alongside Source Code
+## 5.19 Documentation MUST be Provided
+
+Documentation on the installation and use of the Building Block MUST be provided. Where possible, this documentation SHOULD be stored alongside code in a repository. Documentation MAY be generated from code where applicable.
 
 ## 5.20 MUST Not Use Shared Database/Filesystem/Memory
 
