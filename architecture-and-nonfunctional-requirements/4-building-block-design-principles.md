@@ -58,11 +58,11 @@ Each use case is composed of a collection of modules, or building blocks. As you
 
 ## 4.7 Robust <a href="#_jgyljayvwagf" id="_jgyljayvwagf"></a>
 
-* Operates in low-resource environments:
+* Any client-facing functionality should operate in low-resource environments:
   * Occasional power
   * Low bandwidth
   * Low-reliability connectivity
 * Easily scalable for high availability and reliability
 * API-only based decoupling
-* Asynchronous decoupled communications patterns (such as PubSub) may be used
+* Asynchronous communications pattern decoupled through rooms is ideal
 * Eventual consistency for data
