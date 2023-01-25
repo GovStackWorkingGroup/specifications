@@ -149,7 +149,7 @@ A building block MAY provide a mock testing implementation of API functionality 
 
 ## 5.38 MUST be Internationalizable
 
-## 5.39 MUST Follow Best Practices for Public Code
+## 5.39 SHOULD Follow Best Practices for Public Code
 
 See [https://standard.publiccode.net/](https://standard.publiccode.net) and practices outlined here:
 
