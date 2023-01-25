@@ -44,7 +44,9 @@ Thse should be run across the code base and dependencies, e.g. [https://www.sona
 
 ## 5.11 MUST Include Integration Test Coverage
 
-## 5.12 MUST Include Support for a Log Sink
+## 5.12 MUST Include Support for Capturing Logging information
+
+Building Blocks MUST have a mechanism for generating logging information. This may be as simple as using STDOUT and capturing through docker logs, or may use other log sinking technologies.
 
 ## 5.13 Data Models MUST Include Version Numbers
 
