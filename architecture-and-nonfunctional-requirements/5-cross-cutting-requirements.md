@@ -33,9 +33,9 @@ See [https://api-university.com/blog/the-api-mandate/](https://api-university.co
 5. All service interfaces, without exception, must be designed from the ground up to be externalizable. That is to say, the team must plan and design to be able to expose the interface to developers in the outside world. No exceptions.
 6. Anyone who doesn’t do this will be fired. Is this enforcable?
 
-## 5.8 APIs MUST be Idempotent
+## 5.8 GET and PUT APIs MUST be Idempotent
 
-Paraphrased from Wikipedia: APIs can be called multiple times without changing the result beyond the initial application.
+GET and PUT APIs (as well as HEAD, OPTIONS, and TRACE) must be idempotent, returning the same value if called multiple times. POST and DELETE APIs will not be idempotent as they change the underlying data. Reference [https://restfulapi.net/idempotent-rest-apis/](https://restfulapi.net/idempotent-rest-apis/) for more information.
 
 ## 5.9 Stateless APIs SHOULD be Used Wherever Possible to Enhance Scalability
 
