@@ -111,7 +111,7 @@ See [https://en.wikipedia.org/wiki/Representational\_state\_transfer](https://en
 
 ## 5.28 MUST be Autonomous
 
-Each block must be capable of running independently.
+Each building block MUST be capable of running independently, without requiring other dependencies such as external data stores or other building blocks.
 
 ## 5.29 MUST be Open-source Only with No Vendor Lock-in
 
