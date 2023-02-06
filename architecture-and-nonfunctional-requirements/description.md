@@ -68,7 +68,7 @@ A building block is only so useful on its own. In practice, building blocks MUST
 
 ### 2.4.1 Federation and Data Exchange Requirements
 
-Each building block deployment MUST use a security server to federate and communicate with other data consumers and providers. This ensures the confidentiality, integrity, and interoperability between data exchange parties. A security server MUST provide the following capabilities:
+Each building block deployment MUST use an Information Mediator to federate and communicate with other data consumers and providers. This ensures the confidentiality, integrity, and interoperability between data exchange parties. An Information Mediator MUST provide the following capabilities:
 
 * address management
 * message routing
@@ -82,6 +82,8 @@ Each building block deployment MUST use a security server to federate and commun
 * error handling
 * monitoring and alerting
 
+Refer to the full description of the [Information Mediator Building Block](https://govstack.gitbook.io/specification/building-blocks/information-mediation) for more information.
+
 ### 2.4.2 Organizational Model
 
 Some policies and processes need to be applied to support this methodology.
@@ -90,28 +92,17 @@ First, a central operator needs to be created. This organization will be respons
 
 Trust services need to be set up internally or procured from third parties, including timestamp and certificate authorities. This provides the necessary infrastructure to support distributed deployments.
 
-Finally, members can be onboarded and provided with access to the security server.
+Finally, members can be onboarded and provided with access to the Information Mediator.
 
 Once agreements are in place, members can deploy new services in a decentralized, distributed manner. Before deploying a new service, the central operator must be notified of any changes to access-rights, including organization and machine-level authentication before it can publish or consume data.
 
 ### 2.4.3 Technical Architecture
 
-A Central Operator is responsible for maintaining a registry of members, the security policies for building blocks and other member instances, a list of trusted certification authorities and a list of trusted time-stamping authorities. The member registry and security policies MUST be exposed to security servers over HTTP.
+A Central Operator is responsible for maintaining a registry of members, the security policies for building blocks and other member instances, a list of trusted certification authorities and a list of trusted time-stamping authorities. The member registry and security policies MUST be exposed to the Information Mediator over HTTP.
 
-Certificate authorities are responsible for issuing and revoking certificates used for securing and ensuring the integrity of federated information systems. Certificate authorities MUST support the Online Certificate Status Protocol (OCSP) so security servers can check certificate validity.
+Certificate authorities are responsible for issuing and revoking certificates used for securing and ensuring the integrity of federated information systems. Certificate authorities MUST support the Online Certificate Status Protocol (OCSP) so that an Information Mediator can check certificate validity.
 
 Time-stamping authorities securely facilitate time stamping of messages. Time stamping authorities MUST support batched time stamping.
-
-Security servers MUST be used by members to publish or consume data and services. Building blocks and existing information services that use REST MUST work seamlessly with the security server.
-
-### 2.4.4 Support for Rooms
-
-Ideally, publish/subscribe SHOULD allow blocks to be connected together in rooms to collaboratively solve problems. Once available, blocks should support rooms, e.g.
-
-* everything is connected through a room
-* requests are made in the room
-* blocks process data
-* answer(s) are posted to the room
 
 ## 2.5 System Architecture
 
