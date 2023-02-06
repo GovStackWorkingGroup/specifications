@@ -27,8 +27,6 @@ Here is a list of indicators with high-level descriptions:
 | Social Legitimacy                           | New technologies treated with suspicion in local communities especially if prior experience of job losses or unintended social consequences                                                                                                                                                                 |
 | Cultural barriers                           | New technologies are seen as a challenge to cultural traditions and communal activities. Technology can also face barriers such as language, role of women in the society, lack of entrepreneurs or dependencies created by decades of development aid                                                      |
 
-Source: [https://docs.google.com/document/d/1r-rKhtFfCVE7MLNhbK6TdmtJT71NaPdo/edit](https://docs.google.com/document/d/1r-rKhtFfCVE7MLNhbK6TdmtJT71NaPdo/edit)
-
 Additionally, the Principles for Digital Development are especially relevant when designing for low resource setting: [https://digitalprinciples.org/](https://digitalprinciples.org)
 
 Each building block specification SHOULD specify mitigations for these issues.
@@ -46,8 +44,6 @@ The SDG digital framework has formally defined criteria. Building blocks MUST me
 * Designed for Extensibility
 * Standards Based Conformance or Compliance
 
-See [https://drive.google.com/file/d/1Ix2A3W\_vpvaRvKyek524kCuB5MKcRFd3/view?usp=sharing](https://drive.google.com/file/d/1Ix2A3W\_vpvaRvKyek524kCuB5MKcRFd3/view?usp=sharing) for details, including a checklist.
-
 ## 2.3 Building Blocks
 
 Building blocks are software modules that can be deployed and combined in a standardized manner. Each building block is capable of working independently, but they can be combined to do much more:
@@ -62,8 +58,7 @@ A block is composed of domain-driven microservices, modeled as closely as possib
 
 Blocks exchange data using lightweight, human-readable data that can easily be extended where needed. Data models and APIs are described in a lightweight manner that’s human-readable, allowing them to be easily and quickly understood and validated.
 
-Building blocks should meet the criteria of the Digital Square Global Goods maturity model for Global Utility, Community and Software Quality. See\
-[https://www.google.com/url?q=https://wiki.digitalsquare.io/index.php/Global\_Goods\_Maturity\&sa=D\&source=editors\&ust=1614177377366000\&usg=AOvVaw3rKLBBw5qDajPOetkDdmTv](https://wiki.digitalsquare.io/index.php/Global\_Goods\_Maturity) for details.
+
 
 ![](../.gitbook/assets/image3.png)
 
@@ -137,8 +132,6 @@ Here we can see two adapters, one for patient records and another for a tax regi
 In this example, an HL7 2.5 adapter connects an existing application’s patient record registry, and an SAP SOAP adapter connects an existing applications tax registry to GovStack. Both adapters provide services that are available for use by other building blocks.
 
 If an existing application sends events, they are exposed as webhooks in the adapter’s OpenAPI specification like other APIs. This allows any GovStack building block to be notified when the event occurs.
-
-Talk about terminology management as part of workflow/adapters, e.g. [https://openconceptlab.org/](https://openconceptlab.org)
 
 ### 2.5.2 API Gateways
 

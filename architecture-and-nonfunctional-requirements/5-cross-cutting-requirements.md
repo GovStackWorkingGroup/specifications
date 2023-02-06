@@ -6,11 +6,11 @@ Building blocks are responsible for meeting all cross-cutting requirements or sp
 
 ## 5.2 MUST follow TM Forum Specification REST API Design Guidelines Part 1 <a href="#_wyofs1ddrlgk" id="_wyofs1ddrlgk"></a>
 
-See: [https://drive.google.com/file/d/1lpl1IzLGzvbXALW4jqDxLAKqfwuJyeXy/view?usp=sharing](https://drive.google.com/file/d/1lpl1IzLGzvbXALW4jqDxLAKqfwuJyeXy/view?usp=sharing)
+See: [TM Forum REST API Design Guidelines](https://www.tmforum.org/resources/specification/tmf630-rest-api-design-guidelines-4-2-0/)
 
 ## 5.3 SHOULD follow TM Forum Specification REST API Design Guidelines Parts 2-7 <a href="#_19suuzwtdje" id="_19suuzwtdje"></a>
 
-See [https://drive.google.com/drive/u/2/folders/1eS20wt\_PP7CoJEOvzagYDTTMCfmv3y6l](https://drive.google.com/drive/u/2/folders/1eS20wt\_PP7CoJEOvzagYDTTMCfmv3y6l)
+See [TM Forum REST API Design Guidelines](https://www.tmforum.org/resources/specification/tmf630-rest-api-design-guidelines-4-2-0/)
 
 ## 5.4 EOL MUST be at Least 5 Years <a href="#_fo8til974qj2" id="_fo8til974qj2"></a>
 

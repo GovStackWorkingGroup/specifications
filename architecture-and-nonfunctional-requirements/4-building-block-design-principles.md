@@ -5,7 +5,7 @@
 * Right to be forgotten: everything must be deletable
 * User-centered design
 
-The best tools evolve from empathizing, understanding and designing for the needs of end-users. Accordingly, we’ve identified a series of use cases and user journeys here: [InfoMed - RFIMPL\_Use Case Journeys.docx](https://docs.google.com/document/d/1zZwTdy1exWWpuIDcEzQ1B7h5Nr1vaF\_g/edit)
+The best tools evolve from empathizing, understanding and designing for the needs of end-users. Accordingly, we’ve identified a series of use cases and user journeys here: [GovStack Use Cases](https://govstack.gitbook.io/product-use-cases)
 
 Each use case is composed of a collection of modules, or building blocks. As you can see, a relatively small set of these building blocks can be readily applied to a wide variety of applications in low-resource settings.
 
