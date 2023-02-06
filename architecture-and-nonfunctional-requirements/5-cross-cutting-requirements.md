@@ -8,9 +8,13 @@ Building blocks are responsible for meeting all cross-cutting requirements or sp
 
 See: [TM Forum REST API Design Guidelines](https://www.tmforum.org/resources/specification/tmf630-rest-api-design-guidelines-4-2-0/)
 
+See: [TM Forum REST API Design Guidelines](https://www.tmforum.org/resources/specification/tmf630-rest-api-design-guidelines-4-2-0/)
+
 ## 5.3 SHOULD follow TM Forum Specification REST API Design Guidelines Parts 2-7 <a href="#_19suuzwtdje" id="_19suuzwtdje"></a>
 
 See [TM Forum REST API Design Guidelines](https://www.tmforum.org/resources/specification/tmf630-rest-api-design-guidelines-4-2-0/)
+
+See: [TM Forum REST API Design Guidelines](https://www.tmforum.org/resources/specification/tmf630-rest-api-design-guidelines-4-2-0/)
 
 ## 5.4 EOL MUST be at Least 5 Years <a href="#_fo8til974qj2" id="_fo8til974qj2"></a>
 
@@ -191,4 +195,4 @@ Include the right to be forgotten account deletion), privacy requirements to pro
 
 ## 5.45 MUST Implement Existing Standards Where Possible
 
-Building blocks and building block solutions MUST leverage existing standards, especially those listed in the [Standards section](6-standards.md) below.
+Building blocks and building block solutions MUST leverage existing standards, especially those listed in the [Standards section](7-standards.md) below.
