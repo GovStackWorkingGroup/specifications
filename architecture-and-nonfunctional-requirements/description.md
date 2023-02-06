@@ -2,9 +2,9 @@
 
 This document is intended for building block working groups and developers. It provides guidelines and principles that should be considered by all building blocks. It also provides cross-cutting requirements that must be considered
 
-GovStack aims to provide a reference architecture for digital governance software to support sustainable development goals.
+GovStack aims to provide a reference architecture for digital governance software to support sustainable development goals. We’ve seen the many benefits digitalization of governance can bring. We believe that leveraging a Whole-of-Government approach rooted in common building block technologies can help accelerate this process around the world.
 
-This will accelerate the collaborative development of best-of-breed digital public goods, enhancing efficiency and transparency across the world - especially in low-resource settings.
+The goal of GovStack is will accelerate the collaborative development of interoperable digital public goods, enhancing efficiency and transparency across the world - especially in low-resource settings. The guidelines and requirements described in this document provide a framework for the development of digital building blocks oriented toward this goal.&#x20;
 
 ## 2.1 Considerations for Low-Resource Settings
 
@@ -32,10 +32,6 @@ Source: [https://docs.google.com/document/d/1r-rKhtFfCVE7MLNhbK6TdmtJT71NaPdo/ed
 Additionally, the Principles for Digital Development are especially relevant when designing for low resource setting: [https://digitalprinciples.org/](https://digitalprinciples.org)
 
 Each building block specification SHOULD specify mitigations for these issues.
-
-We’ve seen the many benefits digitalization of governance can bring. We believe the democratization of key technologies can help accelerate this process around the world.
-
-Given these constraints, how can we best reach Sustainable Development Goals?
 
 ## 2.2 SDG Digital Framework Criteria
 
