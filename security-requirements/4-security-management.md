@@ -2,19 +2,7 @@
 
 The key security functionalities outlined here describe the required facilities that this security building block MUST provide as well as security compliance measures that must be implemented by all building blocks. Note that specific API definitions are not likely to be created by the security building block as any interfaces required are to be based on open standards and implemented as part and parcel of acquired solutions. A good example of this is the adoption of standards like OAuth2 and OpenIDConnect for authentication and authorization. The functional requirements for the implementation of an appropriate API Management and Gateway services solution can be found in a separate section of this document below.
 
-The basic framework by which security MUST be addressed for GovStack is largely based on the NIST CyberSecurity Framework (hitherto referred to as NIST CSF) and the NIST 800-171 Rev.2 standard (hitherto referred to as NIST 800-171) for managing controlled unclassified information (CUI) but does also incorporate other security related requirements. The Specific GovStack Security Related Concerns is organized in terms of the major functions of the NIST CSF which is defined by NIST as 3 major approaches/facets for implementation:
-
-* **core** - provides a set of desired cybersecurity activities and outcomes using common language that is easy to understand,
-* **tiers** - assist organizations by providing context on how an organization views cybersecurity risk management. The tiers also guide organizations to consider the appropriate level of rigor for their cybersecurity program and are often used as a communication tool to discuss risk appetite, mission priority, and budget and;
-* **profiles** - roll your own suitable profile based on your own needs. Profiles are an organization’s unique alignment of their organizational requirements and objectives, risk appetite, and resources against the desired outcomes of the core. Profiles are primarily used to identify and prioritize opportunities for improving cybersecurity at an organization of NIST CSF
-
-The major functions of NIST CSF are
-
-* **Identify**: provides the required abilities that enable a deployer to accurately determine the identity of any party that endeavors to access any part of the system and the issues that are associated with that, from every possible perspective.
-* **Protect**: provides the abilities required to protect and govern along with the issues that pertain not only authentication and access but fraud, hacking, phishing and all other forms of malicious intrusion and theft.
-* **Detect**: provides the required abilities that enable a deployer to detect any form of malicious intrusion or attempts to intrude along with the interdiction abilities and identifies all of the issues that pertain to this.
-* **Respond**: provides the required abilities that enable a deployer to respond to any form of malicious intrusion or attempts to intrude along with the issues and processes for interdiction and the response to such events.
-* **Recover**: provides the requires abilities that enable a deployer to recover from any indecent (malicious or otherwise) such as breaches or attempted breaches of security and identifies the issues that must be addressed and the processes required to address them
+The basic framework by which security MUST be addressed for GovStack is largely based on the NIST CyberSecurity Framework (hitherto referred to as NIST CSF) and the NIST 800-171 Rev.2 standard (hitherto referred to as NIST 800-171) for managing controlled unclassified information (CUI) but does also incorporate other security related requirements.&#x20;
 
 ## 4.1 Specific GovStack Security Related Issues
 
@@ -25,7 +13,7 @@ This section of the document provides a specific list of the concerns, principle
 * Which target phase of the project the issue must be addressed in (i.e. first/second) - third phases are usually never completed
 * How feasible it is to address the issue in a limited-resource or low-resource setting (predominantly related to costs) - see the [Architecture Blueprint and Non-Functional Requirements](../architecture-and-nonfunctional-requirements/) document for the definitions associated with low-resource settings.
 
-A general description and/or discussion of the issue that needs to be addressed and the various alternatives available for addressing it (not exhaustive)
+A general description and/or discussion of the issue that needs to be addressed and the various alternatives available for addressing it (not exhaustive). The security issues are organized by the 5 NIST functions (Identify, Protect, Detect, Respond, Recover).
 
 ## 4.2 Security Issues by NIST Function
 
