@@ -2,7 +2,9 @@
 
 The key security functionalities outlined here describe the required facilities that this security building block MUST provide as well as security compliance measures that must be implemented by all building blocks. Note that specific API definitions are not likely to be created by the security building block as any interfaces required are to be based on open standards and implemented as part and parcel of acquired solutions. A good example of this is the adoption of standards like OAuth2 and OpenIDConnect for authentication and authorization. The functional requirements for the implementation of an appropriate API Management and Gateway services solution can be found in a separate section of this document below.
 
-The basic framework by which security MUST be addressed for GovStack is largely based on the NIST CyberSecurity Framework (hitherto referred to as NIST CSF) and the NIST 800-171 Rev.2 standard (hitherto referred to as NIST 800-171) for managing controlled unclassified information (CUI) but does also incorporate other security related requirements.&#x20;
+The basic framework by which security is addressed for GovStack is largely based on the [NIST CyberSecurity Framework](https://www.nist.gov/cyberframework) (hitherto referred to as NIST CSF) and the [NIST 800-171 Rev.2](https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final) standard (hitherto referred to as NIST 800-171) for managing controlled unclassified information (CUI) but does also incorporate other security related requirements. The GovStack security requirements are also informed by and should be compatible with the [ISO/IEC-27001:2022 Information security, cybersecurity and privacy protection requirements](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) (hitherto referred to as ISO-27001).
+
+The Specific GovStack Security Related Concerns is organized in terms of the major functions of the NIST CSF which is defined by NIST as 3 major approaches/facets for implementation:
 
 ## 4.1 Specific GovStack Security Related Issues
 
