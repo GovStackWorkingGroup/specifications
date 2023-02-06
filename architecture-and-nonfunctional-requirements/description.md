@@ -31,9 +31,13 @@ Additionally, the Principles for Digital Development are especially relevant whe
 
 Each building block specification SHOULD specify mitigations for these issues.
 
-## 2.2 SDG Digital Framework Criteria
+## 2.2 Criteria
 
-The SDG digital framework has formally defined criteria. Building blocks MUST meet the following criteria:
+The following provide criteria and definitions for Building Blocks.
+
+### SDG Digital Investment Framework
+
+The [SDG Digital Investment Framework](https://dial.global/research/sdg-digital-investment-framework/), developed by the International Telecommunication Union (ITU) and the Digital Impact Alliance (DIAL), has formally defined criteria. Building blocks MUST meet the following criteria:
 
 * Reusable software components
 * Licensed as open source, proprietary, or freely available with Open Access to data
@@ -43,6 +47,34 @@ The SDG digital framework has formally defined criteria. Building blocks MUST me
 * Designed for Scalability&#x20;
 * Designed for Extensibility
 * Standards Based Conformance or Compliance
+
+### Digital Public Goods Alliance (DPGA)
+
+Additionally, the Digital Public Goods Alliance has created a [definition of Building Blocks](https://digitalpublicgoods.net/DPI-DPG-BB-Definitions.pdf). In this definition, a building block:
+
+[Refers to software c](#user-content-fn-1)[^1]ode, platforms, and applications that are interoperable, provide a basic digital service at scale, and can be reused for multiple use cases and contexts.
+
+Serves as a component of a larger system or stack.
+
+Can be used to facilitate the delivery of digital public services via functions, which may include registration, scheduling, ID authentication, payment, data administration, and messaging.&#x20;
+
+Building blocks can be combined and adapted to be included as part of a stack of technologies to form a country’s DPI.&#x20;
+
+Building blocks may be open source or proprietary and therefore are not always DPGs.&#x20;
+
+“Building blocks can be as simple as a common set of rules or protocols (for example email programs like Simple Mail Transfer Protocol - SMTP), or complex (for example an open-source health information system like the DPG, District Health Information Software - DHIS2)“&#x20;
+
+Characteristics of building blocks:&#x20;
+
+Autonomous: building blocks provide a standalone, reusable service or set of services, they may be composed of many modules/microservices.\
+Generic: building blocks are flexible across use cases and sectors.\
+Interoperable: building blocks must be able to combine, connect, and interact with other building blocks.\
+Iterative evolvability: building blocks can be improved even while being used as part of solutions.&#x20;
+
+Requirement: To be considered a building block, solutions must meet the technical requirements determined by the GovStack Initiative which as of April 2022 includes: \
+Open API, Open API Specifications, Rest API\
+Packaged in a container\
+Include a information mediator where communication is restricted through a information mediator
 
 ## 2.3 Building Blocks
 
@@ -141,3 +173,5 @@ This shows a complete GovStack deployment with API gateways for citizen access v
 ![(open in https://app.diagrams.net/)](<../.gitbook/assets/image6 (2).png>)
 
 Here, citizens and existing applications are provided API access for requests into GovStackvia a common API Gateway, while the workflow building block/adapter provides outgoing API access to existing applications from GovStack building blocks.
+
+[^1]: 
