@@ -62,10 +62,11 @@ Generic: building blocks are flexible across use cases and sectors.\
 Interoperable: building blocks must be able to combine, connect, and interact with other building blocks.\
 Iterative evolvability: building blocks can be improved even while being used as part of solutions.&#x20;
 
-Requirement: To be considered a building block, solutions must meet the technical requirements determined by the GovStack Initiative which as of April 2022 includes: \
-Open API, Open API Specifications, Rest API\
-Packaged in a container\
-Include a information mediator where communication is restricted through a information mediator
+Requirement: To be considered a building block, solutions must meet the technical requirements determined by the GovStack Initiative which as of April 2022 includes:&#x20;
+
+1. Open API, Open API Specifications, Rest API
+2. Packaged in a container
+3. Include a information mediator where communication flows between services that are not co-located
 
 ### Digital Public Goods Alliance (DPGA)
 
@@ -86,12 +87,6 @@ Building blocks may be open source or proprietary and therefore are not always D
 
 “Building blocks can be as simple as a common set of rules or protocols (for example email programs like Simple Mail Transfer Protocol - SMTP), or complex (for example an open-source health information system like the DPG, District Health Information Software - DHIS2)“&#x20;
 
-Each building block deployment MUST use a security server to federate and communicate with other data consumers and providers. This ensures the confidentiality, integrity, and interoperability between data exchange parties. A security server MUST provide the following capabilities:
-
-Characteristics of building blocks:&#x20;
-
-Refer to the full description of the [Information Mediator Building Block](https://govstack.gitbook.io/specification/building-blocks/information-mediation) for more information.
-
 Autonomous: building blocks provide a standalone, reusable service or set of services, they may be composed of many modules/microservices.\
 Generic: building blocks are flexible across use cases and sectors.\
 Interoperable: building blocks must be able to combine, connect, and interact with other building blocks.\
@@ -101,8 +96,6 @@ Requirement: To be considered a building block, solutions must meet the technica
 &#x20;  1\. Open API, Open API Specifications, Rest API\
 &#x20;  2\. Packaged in a container\
 &#x20;  3\. Include a information mediator where communication is restricted through a information mediator
-
-Finally, members can be onboarded and provided with access to the security server.
 
 ## 2.3 Building Blocks
 
@@ -118,7 +111,7 @@ Building blocks are composable, interoperable software modules that can be used 
 
 Each Building Block represents, as much as possible, the minimum required functionality (MVP) to do its job. This ensures each Building Block is usable and useful on its own, and easily extensible to support a variety of use cases.
 
-A block is composed of domain-driven microservices, modeled as closely as possible on existing roles and processes. This helps ensure each block is as useful as possible in the real world.
+A Building Block is composed of domain-driven microservices, modeled as closely as possible on existing roles and processes. This helps ensure each building block is as useful as possible in the real world.
 
 Building Blocks exchange data using lightweight, human-readable data that can easily be extended where needed. Data models and APIs are described in a lightweight manner that’s human-readable, allowing them to be easily and quickly understood and validated.
 
@@ -132,13 +125,15 @@ A building block may also be an application which provides re-usable interfaces:
 2. **User interfaces** (i.e., forms) which can be used in lieu of individual end-user apps building their own forms (e.g. I’m building a _new_ maternal and child health application; I’d like to use a registration screenflow that’s been pre-built in the registration building block as part of a larger, _composed_ application.)
 3. A **public API** which exposes the critical **back-end services** performed by this BB (adding a mom to a database; checking for a mom’s enrollment status in a program) to be used (as a microservice) by existing or new applications with legacy/bespoke needs (e.g., i’ve already got a maternal and child health app that the CHWs are using, and I want to send a webhook to the registration BB after a CHW clicks “submit” on our custom form.)
 
-## 2.4 Building Blocks Working Together
+## 2.4 Cross-Building Block Communication
 
 A building block is only so useful on its own. In practice, building blocks MUST be connected together in a secure, robust, trusted manner that facilitates distributed deployments and communications with existing services.
 
+It is STRONGLY RECOMMENDED that a building block use an information mediator (as described below and in the [Information Mediator Building Block specification](https://govstack.gitbook.io/bb-information-mediation)) for any communications across the internet. An Information Mediator is not required for communication between building blocks which are co-located.
+
 ### 2.4.1 Federation and Data Exchange Requirements
 
-Each building block deployment MUST use an Information Mediator to federate and communicate with other data consumers and providers. This ensures the confidentiality, integrity, and interoperability between data exchange parties. An Information Mediator MUST provide the following capabilities:
+Each building block deployment SHOULD use an Information Mediator to federate and communicate with other data consumers and providers, particularly when communicating between services that are not co-located. This ensures the confidentiality, integrity, and interoperability between data exchange parties. An Information Mediator MUST provide the following capabilities:
 
 * address management
 * message routing
@@ -151,28 +146,30 @@ Each building block deployment MUST use an Information Mediator to federate and 
 * logging
 * error handling
 * monitoring and alerting
+* service registry and discovery
 
-Refer to the full description of the [Information Mediator Building Block](https://govstack.gitbook.io/specification/building-blocks/information-mediation) for more information.
+Refer to the full description of the [Information Mediator Building Block ](https://govstack.gitbook.io/bb-information-mediation)for more information.
 
 ### 2.4.2 Organizational Model
 
-Some policies and processes need to be applied to support this methodology.
+In order to effectively deploy a software solution using the Information Mediator, several policies and processes will need to be applied. This section briefly describes that organizational processes that must be in place.&#x20;
 
-First, a central operator needs to be created. This organization will be responsible for the overall operation of the system, including operations and onboarding new members. Policies and contractual agreements for onboarding need to be created.
+First, a central operator will be identified and created. This organization will be responsible for the overall operation of the system, including operations and onboarding new members. Policies and contractual agreements for onboarding need to be created.
 
 Trust services need to be set up internally or procured from third parties, including timestamp and certificate authorities. This provides the necessary infrastructure to support distributed deployments.
 
-Finally, members can be onboarded and provided with access to the Information Mediator.
+Finally, members can be onboarded and provided with access to the Information Mediator and methods to register the services that they provide as well as discover services that are available.
 
 Once agreements are in place, members can deploy new services in a decentralized, distributed manner. Before deploying a new service, the central operator must be notified of any changes to access-rights, including organization and machine-level authentication before it can publish or consume data.
 
 ### 2.4.3 Technical Architecture
 
-A Central Operator is responsible for maintaining a registry of members, the security policies for building blocks and other member instances, a list of trusted certification authorities and a list of trusted time-stamping authorities. The member registry and security policies MUST be exposed to the Information Mediator over HTTP.
+This section provides an overview of the technical processes and architecture that must be implemented once the organizational model has been created.&#x20;
 
-Certificate authorities are responsible for issuing and revoking certificates used for securing and ensuring the integrity of federated information systems. Certificate authorities MUST support the Online Certificate Status Protocol (OCSP) so that an Information Mediator can check certificate validity.
-
-Time-stamping authorities securely facilitate time stamping of messages. Time stamping authorities MUST support batched time stamping.
+1. A Central Operator is responsible for maintaining a registry of members, the security policies for building blocks and other member instances, a list of trusted certification authorities and a list of trusted time-stamping authorities. The member registry and security policies MUST be exposed to the Information Mediator over HTTP.
+2. Certificate authorities are responsible for issuing and revoking certificates used for securing and ensuring the integrity of federated information systems. Certificate authorities MUST support the Online Certificate Status Protocol (OCSP) so that an Information Mediator can check certificate validity.
+3. Time-stamping authorities securely facilitate time stamping of messages. Time stamping authorities MUST support batched time stamping.
+4. The Service Registry provides a mechanism for building blocks to register the services that they provide and for other building blocks to discover and consume those services. Any services provided or consumed by a Building Block that leverages the Information Mediator architecture MUST use this service registry functionality.&#x20;
 
 ## 2.5 Keywords and Definitions
 
