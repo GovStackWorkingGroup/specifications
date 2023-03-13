@@ -35,3 +35,7 @@ Note that OpenAPI 3.1 supports inline JSONSchema for model definitions
 
 Used for packaging building block components for deployment [https://en.wikipedia.org/wiki/Docker\_(software)](https://en.wikipedia.org/wiki/Docker\_\(software\))\
 [https://www.docker.com/resources/what-container](https://www.docker.com/resources/what-container)
+
+### 7.8 QR code&#x20;
+
+Must be generated with the ISO/IEC 18004:2015 standard
