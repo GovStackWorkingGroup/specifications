@@ -34,7 +34,7 @@ Building blocks MUST NOT use shared databases, file systems or memory for data e
 
 Use semantic versioning when documenting changes to API definitions. Any breaking changes to APIs MUST use a different endpoint, as shown here: e.g. /api/v1 and /api/v2
 
-&#x20;See [https://semver.org/](https://semver.org/)
+See [https://semver.org/](https://semver.org/)
 
 ## 5.5 Documentation must be Provided (REQUIRED)
 
@@ -42,7 +42,10 @@ Documentation on the installation and use of the Building Block MUST be provided
 
 ## 5.6 Provide an OpenAPI specification (REQUIRED)
 
-Each building block’s service APIs MUST be defined and exposed using a standardized machine-readable language. External APIs are described using the OpenAPI 3.x specification: [https://swagger.io/docs/specification/about/](https://swagger.io/docs/specification/about/)
+Each building block’s service APIs MUST be defined and exposed using a standardized machine-readable language. External APIs are described using the OpenAPI 3.x specification. See the following resources for additional information:
+
+* [Definition of the OpenAPI standard ](https://swagger.io/docs/specification/about/)
+* [Swagger OpenAPI 3.0 Specification ](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md)
 
 ## 5.7 Building blocks must be deployable as a container (REQUIRED)
 
@@ -53,9 +56,9 @@ Each building block’s service APIs MUST be defined and exposed using a standar
 
 When a building block requires deployment tools such as Kubernetes or Ansible, configuration and deployment scripts should be included in the building block repository. Use of this type of deployment configuration will make individual components of the building block independently scalable and make building blocks less monolithic and more efficient.
 
-## 5.9 Comply with GDPR Principles (RECOMMENDED)
+## 5.9 Comply with GDPR Principles (REQUIRED)
 
-Building Blocks SHOULD conform to GDPR principles, including the right to be forgotten account deletion, and privacy requirements to protect the rights of individuals. Note that these requirements may vary by region, and building blocks must conform to regulatory requirements wherever they are deployed.
+Building Blocks MUST conform to GDPR principles, including the right to be forgotten account deletion, and privacy requirements to protect the rights of individuals. Note that these requirements may vary by region, and building blocks must conform to regulatory requirements wherever they are deployed.
 
 ## 5.10 Include Support for Capturing Logging information (REQUIRED)
 
@@ -79,7 +82,7 @@ API calls SHOULD be able to be made independently of one another. Each API call 
 
 ## 5.15 Include Transaction/Trace/Correlation IDs (RECOMMENDED)
 
-Transactions that cross multiple services SHOULD provide a correlation ID that is passed with every request and response. This allows for easier tracing and tracking of a specific transaction.&#x20;
+Transactions that cross multiple services SHOULD provide a correlation ID that is passed with every request and response. This allows for easier tracing and tracking of a specific transaction.
 
 ## 5.16 Include Clearly-Defined Key Rotation Policies (RECOMMENDED)
 
@@ -103,7 +106,7 @@ Configuration MUST be done using secure processes, such as environment variables
 
 ## 5.22 Design for Asynchronous First (RECOMMENDED)
 
-Designs should support occasional connectivity/low bandwidth, and should allow for asynchronous communication between building blocks. A Publish/Subscribe design pattern can be used to handle changes, allowing loosely-coupled solutions to be assembled without changing existing APIs.&#x20;
+Designs should support occasional connectivity/low bandwidth, and should allow for asynchronous communication between building blocks. A Publish/Subscribe design pattern can be used to handle changes, allowing loosely-coupled solutions to be assembled without changing existing APIs.
 
 ## 5.23 Use Standardized Data Formats for Interchange (REQUIRED)
 
@@ -129,13 +132,11 @@ Where a building block has a human user interaction, it SHOULD be able to presen
 
 ## 5.28 Use NTP Synchronization (RECOMMENDED)
 
-Where precise timestamps are required, building blocks SHOULD leverage Network Time Protocol (NTP) to synchronize timestamps between servers.&#x20;
-
-
+Where precise timestamps are required, building blocks SHOULD leverage Network Time Protocol (NTP) to synchronize timestamps between servers.
 
 ## Other Considerations
 
-Software development best practices are recommended for all building blocks. The following guidelines should be followed as part of the software development process.&#x20;
+Software development best practices are recommended for all building blocks. The following guidelines should be followed as part of the software development process.
 
 ## EOL SHOULD be at Least 5 Years <a href="#_fo8til974qj2" id="_fo8til974qj2"></a>
 

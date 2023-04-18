@@ -1,6 +1,6 @@
 # 3 Considerations
 
-With any software implementation, there are constraints and limitations that must be addressed. In any country context, there will be deficiencies that present challenges to any technology implementation. In the context of GovStack, the constraints and deficiencies that may be present must be considered at the outset of any project.&#x20;
+As with any software implementation, there are constraints and limitations in the GovStack approach that must be addressed. In any country context, there will be deficiencies that present challenges to any technology implementation. In the context of GovStack, the constraints and deficiencies that may be present must be considered at the outset of any project.
 
 Here is a list of potential deficiencies that may be encountered with high-level descriptions:
 
@@ -19,14 +19,7 @@ Here is a list of potential deficiencies that may be encountered with high-level
 | Social Legitimacy                           | New technologies treated with suspicion in local communities especially if prior experience of job losses or unintended social consequences                                                                                                                                                                 |
 | Cultural barriers                           | New technologies are seen as a challenge to cultural traditions and communal activities. Technology can also face barriers such as language, role of women in the society, lack of entrepreneurs or dependencies created by decades of development aid                                                      |
 
-Additionally, the Principles for Digital Development are especially relevant when designing for low resource setting: [https://digitalprinciples.org/](https://digitalprinciples.org)
+Additionally, the Principles for Digital Development are especially relevant when designing for low resource setting. Refer to [https://digitalprinciples.org/](https://digitalprinciples.org) for information on these Principles.
 
 Each building block specification SHOULD specify mitigations for these issues.
 
-## ****
-
-See more comprehensive descriptions of the workflow terminology in the [Workflow and Business Process Automation Building Block](https://govstack.gitbook.io/specification/building-blocks/workflow) specification.
-
-* (Workflow) Activity - a single step in a workflow process.
-* (Workflow) Process - a workflow process contains one or many activities.
-* (Workflow) Instance - an instance of execution for a workflow process.
