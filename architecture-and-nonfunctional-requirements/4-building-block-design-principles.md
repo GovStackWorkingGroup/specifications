@@ -22,9 +22,7 @@ Each use case is composed of a collection of modules, or building blocks. As you
 ## 4.3 Sustainable <a href="#_5fv1ildee3ef" id="_5fv1ildee3ef"></a>
 
 * Stewardship is critical, see [https://publiccode.net/codebase-stewardship/](https://publiccode.net/codebase-stewardship/)
-* Continuous funding for maintenance, development and evolution
-* Attractive to ICT industry and individual developers in deployment environment (incentives must be aligned)
-* Lower cost than commercial solutions due to shared development costs
+* Continuous funding for maintenance, development and evolution, which results in lower long-term costs
 * Uses microservices-based architecture instead of monolithic.
   * This increases interoperability, development and deployment speed and reliability.
   * From Wikipedia: a variant of the[ ](https://en.wikipedia.org/wiki/Service-oriented\_architecture)[service-oriented architecture](https://en.wikipedia.org/wiki/Service-oriented\_architecture) (SOA) structural style – arranges an application as a collection of[ ](https://en.wikipedia.org/wiki/Loose\_coupling)[loosely coupled](https://en.wikipedia.org/wiki/Loose\_coupling) services. In a microservices architecture, services are fine-grained and the protocols are lightweight.
