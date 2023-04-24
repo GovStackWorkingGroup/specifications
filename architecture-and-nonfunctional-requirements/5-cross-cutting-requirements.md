@@ -138,25 +138,25 @@ Where precise timestamps are required, building blocks SHOULD leverage Network T
 
 Software development best practices are recommended for all building blocks. The following guidelines should be followed as part of the software development process.
 
-## EOL SHOULD be at Least 5 Years <a href="#_fo8til974qj2" id="_fo8til974qj2"></a>
+### EOL SHOULD be at Least 5 Years <a href="#_fo8til974qj2" id="_fo8til974qj2"></a>
 
 No languages, frameworks, or dependencies should be used in a building block where that component has an EOL of less than 5 years.
 
-## Preference for TIOBE Top 25 Languages
+### Preference for TIOBE Top 25 Languages
 
 See [https://www.tiobe.com/tiobe-index/](https://www.tiobe.com/tiobe-index/)
 
 Where possible, building blocks SHOULD be written using commonly used languages to ensure ongoing maintenance and support are as easy as possible. Building blocks MAY leverage less common languages, such as shell scripting where needed.
 
-## Regular Security and Code Quality Audits SHOULD be Run
+### Regular Security and Code Quality Audits SHOULD be Run
 
 These should be run across the code base and dependencies, e.g. [https://www.sonarqube.org/](https://www.sonarqube.org) and/or [https://snyk.io/](https://snyk.io) .
 
-## SHOULD Include Unit and Integration Test Coverage
+### SHOULD Include Unit and Integration Test Coverage
 
 Building blocks should include tests that provide both unit and integration test coverage
 
-## SHOULD Follow Best Practices for Public Code
+### SHOULD Follow Best Practices for Public Code
 
 See [https://standard.publiccode.net/](https://standard.publiccode.net) and practices outlined here:
 
