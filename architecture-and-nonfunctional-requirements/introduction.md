@@ -2,17 +2,11 @@
 
 This document is intended to provide guidance for building block working groups and developers of products that will be integrated into a GovStack implementation. It also provides guidlines for implementers and system integrators who are deploying solutions that leverage the GovStack approach. It provides guidelines and principles that should be considered by all building blocks and cross-cutting requirements that must be considered for any GovStack project.
 
-This document is intended for building block working groups and developers. It provides guidelines and principles that should be considered by all building blocks. It also provides cross-cutting requirements that must be considered
-
 This will accelerate the collaborative development of best-of-breed digital public goods, enhancing efficiency and transparency across the world - especially in low-resource settings.
 
 ## 2.1 GovStack and the Building Blocks Approach
 
-GovStack aims to provide a reference architecture for digital governance software to support sustainable development goals. Rooted in a Whole-of-Government approach, the GovStack Framework provides a methodology for leveraging common technology components and infrastructure to more easily create and deploy interoperable digital platforms which can address high-priority use cases across multiple sectors.
-
-GovStack aims to provide a reference architecture for digital governance software to support the Sustainable Development Goals. We’ve seen the many benefits digitalization of governance can bring. We believe that leveraging a Whole-of-Government approach rooted in common building block technologies can help accelerate this process around the world.
-
-The goal of GovStack is to accelerate the collaborative development of interoperable digital public goods, enhancing efficiency and transparency across the world - especially in deficient settings. The guidelines and requirements described in this document provide a framework for the development of digital building blocks oriented toward this goal.
+GovStack aims to provide a reference architecture for digital governance software to support sustainable development goals. Rooted in a "Whole-of-Government" approach, the GovStack Framework provides a methodology for leveraging common technology components and infrastructure to more easily create and deploy interoperable digital platforms which can address high-priority use cases across multiple sectors. The guidelines and requirements described in this document provide a framework for the development of digital building blocks oriented toward this goal.
 
 ## 2.2 Criteria for Building Blocks
 
