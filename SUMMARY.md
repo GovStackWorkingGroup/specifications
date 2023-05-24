@@ -25,7 +25,7 @@
 ## Building Blocks
 
 * [About Building Blocks](building-blocks/about-building-blocks.md)
-* [Information Mediation](https://govstack.gitbook.io/bb-information-mediation/information-mediation-1.0)
+* [Information Mediation](https://govstack.gitbook.io/bb-information-mediation/v/information-mediation-1.0)
 * [Registration](https://govstack.gitbook.io/bb-registration/v/registration-1.0/)
 * [Digital Registries](https://govstack.gitbook.io/bb-digital-registries/v/digital-registries-1.0/)
 * [Identity](https://govstack.gitbook.io/bb-identity/v/identity-1.0/)
