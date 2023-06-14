@@ -16,11 +16,10 @@
   * [3 Terminology](security-requirements/3-terminology.md)
   * [4 Security Management](security-requirements/4-security-management.md)
   * [5 Cross-Cutting Requirements](security-requirements/5-cross-cutting-requirements.md)
-  * [6 Security Building Block Modules](security-requirements/6-security-building-block-modules.md)
-  * [7 Standards](security-requirements/7-standards.md)
-  * [8 Cross Reference Links](security-requirements/8-cross-reference-links.md)
-  * [9 Key Decision Log](security-requirements/9-key-decision-log.md)
-  * [10 Future Considerations](security-requirements/10-future-considerations.md)
+  * [6 Standards](security-requirements/6-standards.md)
+  * [7 Authorization Services](security-requirements/7-auth-services.md)
+  * [8 Additional Security Modules](security-requirements/8-additional-security-modules.md)
+  * [9 Other Resources](security-requirements/9-other-resources.md)
 
 ## Building Blocks
 
