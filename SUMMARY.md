@@ -28,7 +28,7 @@
 * [Consent](https://govstack.gitbook.io/bb-consent/v/consent-1.0/)
 * [Digital Registries](https://govstack.gitbook.io/bb-digital-registries/v/digital-registries-1.0/)
 * [Identity](https://govstack.gitbook.io/bb-identity/v/identity-1.0/)
-* [Information Mediation](https://govstack.gitbook.io/bb-information-mediation/v/information-mediation-1.0)
+* [Information Mediation](https://govstack.gitbook.io/bb-information-mediation/v/information-mediation-1.0.1)
 * [Messaging](https://govstack.gitbook.io/bb-messaging/v/messaging-1.0/)
 * [Payments](https://govstack.gitbook.io/bb-payments/v/payments-1.0/)
 * [Registration](https://govstack.gitbook.io/bb-registration/v/registration-1.0/)
