@@ -33,7 +33,7 @@
 * [Payments](https://govstack.gitbook.io/bb-payments/v/payments-1.0/)
 * [Registration](https://govstack.gitbook.io/bb-registration/v/registration-1.0/)
 * [Scheduler](https://govstack.gitbook.io/bb-scheduler/v/scheduler-1.0/)
-* [Workflow](https://govstack.gitbook.io/bb-workflow/v/workflow-1.0/)
+* [Workflow](https://govstack.gitbook.io/bb-workflow/v/workflow-1.0.1/)
 
 ## Use Cases
 
