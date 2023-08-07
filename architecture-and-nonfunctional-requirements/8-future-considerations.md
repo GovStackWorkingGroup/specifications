@@ -75,17 +75,83 @@ In this case the calling application UI has an embedded screen component (iframe
 
 
 ```mermaid
+sequenceDiagram
+user(client/browser)->>Host_App: Submit login <br> credentials 
+Host_App->>ID_Server: Request authentication<br>{credentials}
+ID_Server->>Host_App: Success / failure <br>+ Token /error code
+alt: if authentication is <br>successful:
+   Host_App->>user(client/browser): present <br>bill with "pay" button
+   user(client/browser)->>Host_App: "pay" button pressed 
+   note over Host_App: verify user RBAC <br>for payment service
+   alt: if authorized:
+    Host_App->>IFRAME:  collect_payment{details}
+   IFRAME ->>Payment_BB_Webserver: Service_Request{details}
+   Payment_BB_Webserver->>user(client/browser): payment ui 
+     user(client/browser)->>Payment_BB_Webserver: submit payment details
+     Payment_BB->>Payment_BB_Webserver: Success/fail code
+     Payment_BB_Webserver->>IFRAME: Payment_Event{status details}
+     IFRAME->>Host_App: payment_statusupdate_event{details}
+     alt: if payment is successful
+       Host_App->>user(client/browser): present receipt
+     else:
+       Host_App->>user(client/browser): present Login failure     
+     end
+   end
+else show failure message
+end
 ```
 
-3. **Token-based, decentralized Authentication**
+Assuming the user has already logged into the parent (calling) application, then some action in the main application screen (like clicking "pay" button may invoke the iframe, the application verifies role based access permissions of the user to invoke payment BB service and then transfer control to the IFRAME, which inturn invokes the UI of the called application/BB which is linked to the iframe at build time. The Payment BB receives the request, presents its ui in the iframe and finishing its business it posts a status update event in the IFRAME with relevant details. The IFRAME relays the event to calling application and then the application will process the details and further steps appropriately.
 
-In this method, a user authenticates in the application and a token is issued when the user starts a transaction. When the user clicks a relevant button on the screen of the application, it calls a UI of the Building Block at a predefined URL endpoint and passes the token along with any other information necessary. The same token is also passed to a secure backend API of the Building Block through the Information Mediator by the calling application backend.
+The secure proxy mechanism provides several advantages:
+
+_Centralized Security:_ By intercepting and controlling client requests, one can enforce security policies consistently across multiple applications and services. The calling application owns the responsibility to use the secure proxy as a central point for authentication and authorization, while the called applications need not handle these concerns and rely on the calling application as source of truth.
+
+_Simplified Logic:_ With a secure proxy handling authentication and authorization in the parent application, called applications can focus on their core functionalities rather than implementing these security mechanisms independently. This simplifies application development and maintenance.
+
+However, it has some limitations and challenges:&#x20;
+
+The calling application places trust and control in the calling application hence the Risk of serving a calling application that is already compromised.&#x20;
+
+Since applications and BBs may be typically separate third party products their developments may not be synchronized.&#x20;
+
+It is important to note that the secure proxy mechanism introduces an additional component to the architecture, which requires proper configuration, maintenance, and monitoring. It also adds an extra network hop and potential performance overhead, so it's crucial to ensure that the proxy infrastructure is appropriately scaled and optimized to handle the expected traffic.&#x20;
+
+The specific implementation of the secure proxy mechanism can vary based on the chosen proxy software or infrastructure components.
+
+3. **Key-based, decentralized Authentication**
+
+This method involves generating and exchanging dynamically generated key between the applications. Assuming the user has already authenticated and logged into first application the user starts transaction in that application. When the user clicks a relevant button (e.g. "pay") on the screen of that application, the application obtains a unique temporary key from the target application by making a specific api request through the information mediator. Then the application's frontend redirects to the URL of webserver of the target BB/application  and passes the key along with other relevant data. The called application validates the key internally before providing the UI to complete payment transaction. After completion the BB's backend returns the passed/failed status to its front end ui. The UI then redirects back to the calling application returning the status as a payload. JSON Web Tokens (JWT) is a commonly used token format.
+
+
+
+<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
+
+This mechanism has some advantages:
+
+_Simplicity and Flexibility:_ Token-based authentication, such as JWT, is generally simpler to implement and understand compared to OIDC. It provides flexibility in how tokens are generated, validated, and managed, allowing for customization based on specific requirements.
+
+_Decoupled Architecture:_ Key-based authentication enables a decoupled architecture where the authentication process is not dependent on the identity provider. It also distributes key-based authentication process load across called BB/Applications and not on centralized server. Hence is also not dependent on a single-point-of-failure.&#x20;
+
+_Scalability_: Key-based authentication can be more scalable since it does not require communication with an identity provider for authentication. The server can verify the token locally, reducing external dependencies and potential bottlenecks.
+
+_Dynamic provisioning:_ Since what is contained in a key is decided by the called application, it is possible to generate unique keys for each service call (instead of session wide tokens) enabling higher level of security.
+
+There are some inherent disadvantages of Token-Based Authentication as well:
+
+_Lack of Standardization:_ Although JSON Web Tokens (JWT) signed by JSON Web keys (JWK)  are standard formats for encapsulating unique authentication information, the actual payload of a key is not a standardized specification for authentication. This can result in varied implementations and interoperability challenges when integrating with different systems and applications.
+
+_Authentication:_  The called application gets authentication of the calling application because it gets request for key through the backend via Information mediator, which allows only registered applications to send requests. However, this does not authenticate the user. It trusts that the calling application has appropriately authenticated the user.
+
+_Additional Development Effort:_ Implementing token-based authentication may require more development effort to handle aspects such as token generation, validation, and session management. Customization and maintenance of these components can be time-consuming.
 
 **4. Hybrid Model**
 
-This is a combination of openID Connect and Token based connect models and hence has advantages of both user and application authentication. This method requires more overhead, but ensures security on both the front-end and back-end. The application passes a token to the called Building Block through the Information Mediator, ensuring a valid registered application is sending the request. In addition, the called Building Block can authenticates a valid user with the authorization service.
+This is a combination of openID connect and Token based connect models and hence advantages of both user and application authentication. In this case the user logs in into the the calling application/building block(in this example, Registration), which authenticates the user credentials from an identity server and obtains a unique session token for that user. The registration process may collect required details and present a “payment” button to the user. When the user clicks it, the application will send a request for a one time key from the called building block(in this example, the Payment building block). It then redirects to the url of payments BB page and passes the user token and the key as part of the payload it needs to transfer to payments BB. The payments BB now verifies the key to make sure a valid registered application is sending the request and then authenticates the user token with the identity server to ensure an authorized user is requesting the service. After confirming this, it will put up the required UI page for collecting user payment. Once the payment process is complete it will redirect back to the calling application screen url, along with the payload containing the same token, key along with success/failure status code. This switching can be multilevel in the sense that the same protocol can be used by payments building block to switch to another building block at the front end if required. In such a case the returning path shall also be in the reverse order of the forward switching path, so that appropriate keys are used in each nested branch.
 
 
+
+<img src="../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
 
 Any of these mechanisms may be used, depending on the implementation. In general GovStack recommends option 1 or option 4.
 
