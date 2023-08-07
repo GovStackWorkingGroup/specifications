@@ -26,22 +26,22 @@ A Single Sign On (SSO) system can be used, which allows an authentication token 
 
 ```mermaid
 sequenceDiagram
-user->>Host_App: Submit login <br> credentials 
+user(client/Browser)->>Host_App: Submit login <br> credentials 
 Host_App->>ID_Server: Request authentication<br>{credentials}
 ID_Server->>Host_App: Success / failure <br>+ Token /error code
 alt: if authentication is <br>successful:
-   Host_App->>user: present <br>bill with "pay" button
-   user->>Host_App: "pay" button pressed 
+   Host_App->>user(client/Browser): present <br>bill with "pay" button
+   user(client/Browser)->>Host_App: "pay" button pressed 
    Host_App->>Payment_BB:  collect_payment {token,details}
    Payment_BB->>ID_Server: Request verification <br>{token}
    alt: if authentication is <br>successful:
-     Payment_BB->>user: present payment ui 
-     user->>Payment_App: make payment
+     Payment_BB->>user(client/Browser): present payment ui 
+     user(client/Browser)->>Payment_App: make payment
      Payment_BB->> Host_App: {token, Payment status}
      alt: if payment is successful
-       Host_App->>user: present receipt
+       Host_App->>user(client/Browser): present receipt
      else:
-       Host_App->>user: present Login failure     
+       Host_App->>user(client/Browser): present Login failure     
      end
    end
 else show failure message
@@ -126,6 +126,33 @@ This method involves generating and exchanging dynamically generated key between
 
 
 <img src="../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
+
+
+
+```mermaid
+sequenceDiagram
+user(client/Browser)->>Host_App: Submit login <br> credentials 
+Host_App->>ID_Server: Request authentication<br>{credentials}
+ID_Server->>Host_App: Success / failure <br>+ Token /error code
+alt: if user authentication is <br>successful:
+   Host_App->>user(client/Browser): present <br>bill with "pay" button
+   user(client/Browser)->>Host_App: "pay" button pressed 
+   Host_App->>IM:request(new Key)
+   IM->>Payment_BB:request(new Key)
+   Payment_BB->>IM:(Key)
+   IM->>Host_App: (Key)
+   Host_App->>user(client/Browser): Key
+   user(client/Browser)->> Payments_BB_WebServer: collect_payment(key,data)
+   Payments_BB_WebServer->>Payment_BB: collect_payment(key,data)
+   note over Payment_BB: verify key
+   alt: if key authentication is <br>successful:
+     note over Payment_BB: Process payment
+     Payment_BB->>Payments_BB_WebServer: Success/Failure code
+     Payments_BB_WebServer->>user(client/Browser): present payment ui 
+    end
+else show failure message
+end
+```
 
 This mechanism has some advantages:
 
