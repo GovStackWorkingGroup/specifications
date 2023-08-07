@@ -22,7 +22,7 @@ A Single Sign On (SSO) system can be used, which allows an authentication token 
 
 
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="" class="gitbook-drawing">
 
 ```mermaid
 sequenceDiagram
@@ -58,7 +58,7 @@ _User Profile and Attributes:_ OpenID Connect allows for the retrieval of user p
 
 There are some inherent disadvantages of OpenID Connect as well:
 
-_Authentication:  The called application gets user authentication, but not authentication of the calling application._
+_Authentication:_  The called application gets user authentication, but not authentication of the calling application,  especially when the two applications are not colocated physically.&#x20;
 
 _Increased Complexity:_ Implementing OpenID Connect can be more complex compared to token-based authentication or secure proxy methods. It requires understanding the underlying OAuth 2.0 framework and configuring the identity provider and relying applications accordingly.
 
@@ -68,9 +68,16 @@ _Single point of failure_: Centralized Identity server may lead to single point 
 
 **2. IFRAME based Secure Proxy Authentication**
 
-A Building Block may provide a component that may be embedded as an iFrame within the application. Event handlers may be used to configure the flow of any information from the main application to the embedded frame.
+In this case the calling application UI has an embedded screen component (iframe) that internally points to the called application’s webserver URL. Information within the iframe can be isolated from the main application or may exchange select information through triggered “events” exposed between them. An iframe (inline frame) is a HTML element that allows one to embed one HTML document within another. In the context of authentication and secure redirection between UIs of different web applications, iframes are typically used as a part of the secure proxy mechanism. Specifically, iframes can be used within the secure proxy to load and display content from a different web application or domain while maintaining the security boundaries between the two applications. The iframe can serve as a container for displaying the UI of the target application within the UI of the calling application. The use of iframes in this context is often employed to achieve seamless integration and user experience between different web applications, allowing for the rendering of UI components from multiple sources within a single interface.
 
-**3. Token-based, decentralized Authentication**
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+
+
+```mermaid
+```
+
+3. **Token-based, decentralized Authentication**
 
 In this method, a user authenticates in the application and a token is issued when the user starts a transaction. When the user clicks a relevant button on the screen of the application, it calls a UI of the Building Block at a predefined URL endpoint and passes the token along with any other information necessary. The same token is also passed to a secure backend API of the Building Block through the Information Mediator by the calling application backend.
 
