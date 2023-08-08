@@ -26,25 +26,31 @@ A Single Sign On (SSO) system can be used, which allows an authentication token 
 
 ```mermaid
 sequenceDiagram
-user(client/Browser)->>Host_App: Submit login <br> credentials 
-Host_App->>ID_Server: Request authentication<br>{credentials}
-ID_Server->>Host_App: Success / failure <br>+ Token /error code
+user(client/Browser)->>Webserver_App1: Submit Login <br>credentials 
+Webserver_App1->>App1: Login request<br>{credentials)
+App1->>ID_Server: authentication <br>request{credentials}
+ID_Server->>App1: Success/failure<br>{Token/error code}
 alt: if authentication is <br>successful:
-   Host_App->>user(client/Browser): present <br>bill with "pay" button
-   user(client/Browser)->>Host_App: "pay" button pressed 
-   Host_App->>Payment_BB:  collect_payment {token,details}
+   App1->>Webserver_App1: bill details
+   Webserver_App1:->>user(client/Browser): present <br>bill with "pay" button
+   alt: if "pay" button pressed:
+   user(client/Browser)->>Payment_Webserver:  collect_payment {token,details}
+   Payment_Webserver->>Payment_BB:service request<br>{token,details}
    Payment_BB->>ID_Server: Request verification <br>{token}
    alt: if authentication is <br>successful:
-     Payment_BB->>user(client/Browser): present payment ui 
-     user(client/Browser)->>Payment_App: make payment
-     Payment_BB->> Host_App: {token, Payment status}
+     Payment_BB->>Payment_webserver: process payment
+     Payment_webserver->>user(client/Browser): present payment ui 
+     note over Payment_BB process payment
+     Payment_webserver->> Host_App: {token, Payment status}
      alt: if payment is successful
        Host_App->>user(client/Browser): present receipt
      else:
        Host_App->>user(client/Browser): present Login failure     
      end
    end
-else show failure message
+else 
+   App1->>Webserver_App1: failure message
+   Webserver_App1:->>user(client/Browser): show failure
 end
 ```
 
@@ -179,6 +185,33 @@ This is a combination of openID connect and Token based connect models and hence
 
 
 <img src="../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
+
+
+
+```mermaid
+sequenceDiagram
+user(client/Browser)->>Host_App: Submit login <br> credentials 
+Host_App->>ID_Server: Request authentication<br>{credentials}
+ID_Server->>Host_App: Success / failure <br>+ Token /error code
+alt: if user authentication is <br>successful:
+   Host_App->>user(client/Browser): present <br>bill with "pay" button
+   user(client/Browser)->>Host_App: "pay" button pressed 
+   Host_App->>IM:request(new Key)
+   IM->>Payment_BB:request(new Key)
+   Payment_BB->>IM:(Key)
+   IM->>Host_App: (Key)
+   Host_App->>user(client/Browser): Key
+   user(client/Browser)->> Payments_BB_WebServer: collect_payment(key,data)
+   Payments_BB_WebServer->>Payment_BB: collect_payment(key,data)
+   note over Payment_BB: verify key
+   alt: if key authentication is <br>successful:
+     note over Payment_BB: Process payment
+     Payment_BB->>Payments_BB_WebServer: Success/Failure code
+     Payments_BB_WebServer->>user(client/Browser): present payment ui 
+    end
+else show failure message
+end
+```
 
 Any of these mechanisms may be used, depending on the implementation. In general GovStack recommends option 1 or option 4.
 
