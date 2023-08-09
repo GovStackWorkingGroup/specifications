@@ -203,29 +203,39 @@ This is a combination of openID connect and Token based connect models and hence
 
 ```mermaid
 sequenceDiagram
-user(client/Browser)->>Host_App: Submit login <br> credentials 
-Host_App->>ID_Server: Request authentication<br>{credentials}
-ID_Server->>Host_App: Success / failure <br>+ Token /error code
-alt: if user authentication is <br>successful:
-   Host_App->>user(client/Browser): present <br>bill with "pay" button
-   user(client/Browser)->>Host_App: "pay" button pressed 
-   Host_App->>IM:request(new Key)
-   IM->>Payment_BB:request(new Key)
-   Payment_BB->>IM:(Key)
-   IM->>Host_App: (Key)
-   Host_App->>user(client/Browser): Key
-   user(client/Browser)->> Payments_BB_WebServer: collect_payment(key,data)
-   Payments_BB_WebServer->>Payment_BB: collect_payment(key,data)
-   note over Payment_BB: verify key
-   alt: if key authentication is <br>successful:
-     note over Payment_BB: Process payment
-     Payment_BB->>Payments_BB_WebServer: Success/Failure code
-     Payments_BB_WebServer->>user(client/Browser): present payment ui 
-    end
+user(client/Browser)->>App1_Webserver: Submit Login <br>credentials 
+App1_Webserver->>App1: Login request<br>{credentials)
+App1->>ID_Server: authentication <br>request{credentials}
+ID_Server->>App1: Success/failure<br>{Token/error code}
+alt: if authentication is <br>successful:
+   App1->>App1_Webserver: bill details
+   App1_Webserver->>user(client/Browser): present <br>bill with "pay" button
+   alt: if "pay" button pressed:
+      user(client/Browser)->>App1_Webserver: payment trigger
+      App1_Webserver->>App1: initiate service request
+      App1->>IM:request(payment Key)
+      IM->>Payment_BB:request(new Key)
+      Payment_BB->>IM:(Key)
+      IM->>App1: (Key)
+      App1->>user(client/Browser): {Key,token}
+      user(client/Browser)->>Payment_BB_Webserver:  collect_payment {token,key}
+      Payment_BB_Webserver->>Payment_BB:service request<br>{token,key}
+      note over Payment_BB: verify key internally
+      alt: if key authentication is <br>successful:
+         Payment_BB->>ID_Server: Request verification <br>{token}
+         alt: if authentication is <br>successful:
+           Payment_BB_Webserver->>user(client/Browser):payment page UI
+           Payment_BB_Webserver->>Payment_BB: payment details
+           Payment_BB->>Payment_BB_Webserver: Success/fail code
+           Payment_BB_Webserver->>user(client/Browser): display payment<br>{status,details}
+           user(client/Browser)->>App1_Webserver:redirect to App1{token}
+           App1_Webserver->>user(client/Browser): serve App1_homepage
+         end
+      end
+   end
 else show failure message
 end
 ```
 
 Any of these mechanisms may be used, depending on the implementation. In general GovStack recommends option 1 or option 4.
 
-The various approaches and recommendations, along with technical specifications for UX switching are outlined in detail in this document: [GovStack UX Switching](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/270139400/UX+Switching)&#x20;
