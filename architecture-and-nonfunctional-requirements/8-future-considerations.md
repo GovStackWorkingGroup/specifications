@@ -32,25 +32,25 @@ App1->>ID_Server: authentication <br>request{credentials}
 ID_Server->>App1: Success/failure<br>{Token/error code}
 alt: if authentication is <br>successful:
    App1->>Webserver_App1: bill details
-   Webserver_App1:->>user(client/Browser): present <br>bill with "pay" button
+   Webserver_App1->>user(client/Browser): present <br>bill with "pay" button
    alt: if "pay" button pressed:
-   user(client/Browser)->>Payment_Webserver:  collect_payment {token,details}
-   Payment_Webserver->>Payment_BB:service request<br>{token,details}
-   Payment_BB->>ID_Server: Request verification <br>{token}
-   alt: if authentication is <br>successful:
-     Payment_BB->>Payment_webserver: process payment
-     Payment_webserver->>user(client/Browser): present payment ui 
-     note over Payment_BB process payment
-     Payment_webserver->> Host_App: {token, Payment status}
-     alt: if payment is successful
-       Host_App->>user(client/Browser): present receipt
-     else:
-       Host_App->>user(client/Browser): present Login failure     
-     end
-   end
+      user(client/Browser)->>Payment_Webserver:  collect_payment {token,details}
+      Payment_Webserver->>Payment_BB:service request<br>{token,details}
+      Payment_BB->>ID_Server: Request verification <br>{token}
+      alt: if authentication is <br>successful:
+         Payment_BB->>Payment_Webserver: collect details
+         Payment_Webserver->>user(client/Browser): present payment ui 
+         user(client/Browser)->>Payment_Webserver: submit details
+         Payment_Webserver->>Payment_BB: initative transfer<br> {details}
+         note over Payment_BB: process payment
+         Payment_Webserver->> App1:response{token, Payment status}
+         App1->>Webserver_App1: {payment status}
+         Webserver_App1->>user(client/Browser): display status
+      end
+    end
 else 
-   App1->>Webserver_App1: failure message
-   Webserver_App1:->>user(client/Browser): show failure
+   App1->>Webserver_App1: login failure message
+   Webserver_App1->>user(client/Browser): show failure
 end
 ```
 
@@ -82,28 +82,33 @@ In this case the calling application UI has an embedded screen component (iframe
 
 ```mermaid
 sequenceDiagram
-user(client/browser)->>Host_App: Submit login <br> credentials 
-Host_App->>ID_Server: Request authentication<br>{credentials}
-ID_Server->>Host_App: Success / failure <br>+ Token /error code
-alt: if authentication is <br>successful:
-   Host_App->>user(client/browser): present <br>bill with "pay" button
-   user(client/browser)->>Host_App: "pay" button pressed 
-   note over Host_App: verify user RBAC <br>for payment service
-   alt: if authorized:
-    Host_App->>IFRAME:  collect_payment{details}
-   IFRAME ->>Payment_BB_Webserver: Service_Request{details}
-   Payment_BB_Webserver->>user(client/browser): payment ui 
-     user(client/browser)->>Payment_BB_Webserver: submit payment details
-     Payment_BB->>Payment_BB_Webserver: Success/fail code
-     Payment_BB_Webserver->>IFRAME: Payment_Event{status details}
-     IFRAME->>Host_App: payment_statusupdate_event{details}
-     alt: if payment is successful
-       Host_App->>user(client/browser): present receipt
-     else:
-       Host_App->>user(client/browser): present Login failure     
-     end
-   end
-else show failure message
+user(client/browser)->>App1_Webserver: Submit login <br> credentials 
+App1_Webserver->>App1:{login credentials}
+App1->>ID_Server: Request authentication<br>{credentials}
+ID_Server->>App1: Success / failure <br>+ Token /error code
+alt: if auth is <br>successful:
+   App1->>user(client/browser): present <br>bill with "pay" button
+   alt: if "pay" <br>button pressed 
+     user(client/browser)->>App1_Webserver: verify user RBAC <br>for payment service
+     App1_Webserver->> App1: check rbac
+     App1->>App1_Webserver: authorization status
+     App1_Webserver->>user(client/browser): 
+     alt: if authorized:
+       user(client/browser)->>IFRAME:  collect_payment{details}
+       IFRAME ->>Payment_BB_Webserver: Service_Request{details}
+       Payment_BB_Webserver->>IFRAME: payment ui 
+       IFRAME->>Payment_BB_Webserver: submit payment details
+       Payment_BB->>Payment_BB_Webserver: Success/fail code
+       Payment_BB_Webserver->>IFRAME: Payment_Event{status, details}
+       IFRAME->>user(client/browser): {status, details}
+       alt: if payment is successful
+         App1->>user(client/browser):present receipt
+       else: otherwise
+         App1->>user(client/browser): present failure     
+       end
+      end
+    end
+else show login failure
 end
 ```
 
@@ -137,25 +142,33 @@ This method involves generating and exchanging dynamically generated key between
 
 ```mermaid
 sequenceDiagram
-user(client/Browser)->>Host_App: Submit login <br> credentials 
-Host_App->>ID_Server: Request authentication<br>{credentials}
-ID_Server->>Host_App: Success / failure <br>+ Token /error code
+user(client/Browser)->>App1_Webserver: Submit login <br> credentials 
+App1_Webserver->>App1:Credentials
+App1->>ID_Server: Request authentication<br>{credentials}
+ID_Server->>App1: Success / failure <br>+ Token /error code
 alt: if user authentication is <br>successful:
-   Host_App->>user(client/Browser): present <br>bill with "pay" button
-   user(client/Browser)->>Host_App: "pay" button pressed 
-   Host_App->>IM:request(new Key)
-   IM->>Payment_BB:request(new Key)
-   Payment_BB->>IM:(Key)
-   IM->>Host_App: (Key)
-   Host_App->>user(client/Browser): Key
-   user(client/Browser)->> Payments_BB_WebServer: collect_payment(key,data)
-   Payments_BB_WebServer->>Payment_BB: collect_payment(key,data)
-   note over Payment_BB: verify key
-   alt: if key authentication is <br>successful:
-     note over Payment_BB: Process payment
-     Payment_BB->>Payments_BB_WebServer: Success/Failure code
-     Payments_BB_WebServer->>user(client/Browser): present payment ui 
-    end
+   App1->>App1_Webserver: bill
+   App1_Webserver->>user(client/Browser): present bill <br>with "pay" button
+   alt: if "pay" button pressed 
+      user(client/Browser)->>App1_Webserver: payment trigger
+      App1_Webserver->>App1: initiate service request
+      App1->>IM:request(payment Key)
+      IM->>Payment_BB:request(new Key)
+      Payment_BB->>IM:(Key)
+      IM->>App1: (Key)
+      App1->>user(client/Browser): {Key,token}
+      user(client/Browser)->>Payment_BB_Webserver: service_request(key,data)
+      Payment_BB_Webserver->>Payment_BB: collect_payment(key,data)
+      note over Payment_BB: verify key internally
+      alt: if key authentication is <br>successful:
+         Payment_BB_Webserver->>user(client/Browser):payment page UI
+         Payment_BB_Webserver->>Payment_BB: payment details
+         Payment_BB->>Payment_BB_Webserver: Success/fail code
+         Payment_BB_Webserver->>user(client/Browser): display payment<br>{status,details}
+         user(client/Browser)->>App1_Webserver:redirect to App1{token}
+         App1_Webserver->>user(client/Browser): serve App1_homepage
+      end
+   end
 else show failure message
 end
 ```
