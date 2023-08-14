@@ -2,6 +2,8 @@
 
 It is vital that GovStack be able to connect to existing applications. Likewise, existing applications should be able to connect to and utilize GovStack resources as they see fit. This must be done without compromising the easy and secure interoperability provided by the GovStack system.
 
+GovStack has defined a process for an existing product to become compliant with GovStack. This process is outlined in [this document](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/76906515/Compliance+Concept). Note that there are various levels of compliance that are defined. Any product owners or maintainers that are interested in the compliance process can use the GovStack testing platform to begin: [https://testing.govstack.global](https://testing.govstack.global)
+
 This section contains resources can be used by existing platforms to integrate into the GovStack ecosystem. The first section describes 'Adaptors' which can be used to translate an existing API into a GovStack-conformant API. The second section describes Native GovStack implementation. Finally we describe the GovStack Testing Harness which allows products to run automated tests that have been developed by the GovStack team to determine how closely an application conforms to the specifications and expected behaviors described by the Building Block specifications.
 
 ### 6.1 Adaptors

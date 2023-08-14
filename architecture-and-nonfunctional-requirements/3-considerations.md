@@ -1,25 +1,18 @@
-# 3 Considerations
+# 3 GovStack Architecture
 
-As with any software implementation, there are constraints and limitations in the GovStack approach that must be addressed. In any country context, there will be deficiencies that present challenges to any technology implementation. In the context of GovStack, the constraints and deficiencies that may be present must be considered at the outset of any project.
+The following diagram provides an example of a GovStack implementation
 
-Here is a list of potential deficiencies that may be encountered with high-level descriptions:
+<figure><img src="../.gitbook/assets/GovStack Overall Architecture.png" alt=""><figcaption></figcaption></figure>
 
-| Indicator                                   | Description                                                                                                                                                                                                                                                                                                 |
-| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ICT Governance                              | Poor or non-existent National ICT governance structure that makes decisions and ensures accountability framework to encourage desirable behavior in the use of ICT in the country. However, this may be described in documents but the implementation is suboptimal or not enforced.                        |
-| Government ICT policy or Framework          | No strategic policy framework for the acquisition and use of IT for social and economic growth in the country. The policy might be at the development stage and where the policy exists, the policy implementation is lagging or non-existent.                                                              |
-| ICT infrastructure                          | The development of IT infrastructure in the country is lagging behind or sub optimal because of poor policies and insufficient investments in the ICT sector. Low coverage of power or the national grid and little penetration of alternative sources of energy especially in the rural.                   |
-| Financial Resources and Investments in ICT  | Limited funding for ICT projects and initiatives. ICT intervention may not be prioritized. No institutionalized or routinized support for ICT projects/ interventions by the government.                                                                                                                    |
-| ICT projects/ Initiatives                   | ICT projects and intervention are implemented in a silo, none standard approaches and most of the ICT interventions are proprietary and high cost ventures from private institutions. No national standard architecture for interoperability/ integration of systems                                        |
-| Capacity development and social instruments | Low ICT literacy level among user, None or little research and development done by the national institutions/ academia on the use and scale up ICT in the country. Very few ICT professionals to support large scale ICT projects at national level                                                         |
-| Connectivity/ Internet access               | Lack of or minimum network coverage by GSM and or broadband technologies. Low cellular subscribers per capita and very low internet subscribers per capita. The percentage fibre connectivity in the country is low. A greater percentage of the population do not have computers, laptops or smart phones. |
-| Access to information                       | **N**umber of household with internet connectivity is concentrated in the urban areas as opposed to rural areas.                                                                                                                                                                                            |
-| Cost competitiveness                        | Technologies, which are not always ready-for market, are often more expensive than incumbent technologies, without the necessary supportive infrastructure. Competition from existing technologies, including unsustainable technologies                                                                    |
-| Knowledge and skills                        | New technologies require specialized knowledge and skills, which are often lacking in host countries where education levels in science, engineering and technology can be low, and emerging areas. ICT specialists is low                                                                                   |
-| Social Legitimacy                           | New technologies treated with suspicion in local communities especially if prior experience of job losses or unintended social consequences                                                                                                                                                                 |
-| Cultural barriers                           | New technologies are seen as a challenge to cultural traditions and communal activities. Technology can also face barriers such as language, role of women in the society, lack of entrepreneurs or dependencies created by decades of development aid                                                      |
+This digram shows an example of what a GovStack implementation may look like in practice. Several concepts that are important to GovStack are shown in this diagram:
 
-Additionally, the Principles for Digital Development are especially relevant when designing for low resource setting. Refer to [https://digitalprinciples.org/](https://digitalprinciples.org) for information on these Principles.
+* A GovStack implementation may consist of multiple ‘applications’, each serving a distinct purpose. The value that GovStack provides is that these applications do not have to be developed from scratch, but rather leverage core functionalities that are provided by various Building Blocks. And these Building Blocks may be used in multiple applications.
+* Applications may access outside services through the Information Mediator. Access to these services are configured within the Information Mediator per organization. One application may have permission to access data provided by a particular ministry that another application may not access.
+* A GovStack application can be used by different types of users. The roles and permissions for various user groups must be managed by the application itself (using [authorization services described here](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/239370263))
+* Building Blocks may be based on existing applications or Digital Public Goods (DPGs). These DPGs may have an API that conforms with the GovStack API specification for that Building Block. If not, an [adaptor](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/215318576) can be used to map the existing API to the GovStack API
+* The Application frontend and backend may use any mechanism to communicate (REST, GraphQL, etc). However, all GovStack API calls should be done using standard REST protocols.
 
-Each building block specification SHOULD specify mitigations for these issues.
+
+
+## GovStack Components
 
