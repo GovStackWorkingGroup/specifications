@@ -1,5 +1,7 @@
 # 7 Standards
 
+The following standards MUST be used in the development of any Building Block. Adhering to common standards as listed below promotes interoperability and facilitates efficient data transfer between Building Blocks.
+
 ## 7.1 Unicode
 
 Used for encoding text\

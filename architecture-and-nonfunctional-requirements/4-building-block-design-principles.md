@@ -52,7 +52,6 @@ It is vitally important that technology solutions be usable by _all_. Some chara
 
 * Meets users where they are: web, mobile, SMS and/or voice. UI supports accessibility technologies, e.g. screen readers.
 * SSO allows for signing in once for multiple services
-* Shared ownership of code
 * Deployment and development processes and standards are open to contributors
 * Community-driven development tools for documentation and support
 * Blueprints, templates and documentation
@@ -87,7 +86,7 @@ Deployments of Building Blocks should follow these principles:
 
 As with any software implementation, there are constraints and limitations in the GovStack approach that must be addressed. In any country context, there will be deficiencies that present challenges to any technology implementation. In the context of GovStack, the constraints and deficiencies that may be present must be considered at the outset of any project.
 
-Here is a list of potential deficiencies that may be encountered with high-level descriptions:
+&#x20;The following list of potential deficiencies that may be encountered with high-level descriptions should be kept in mind during the development and deployment of any Building Block. Each building block specification SHOULD specify mitigations for these issues:
 
 #### 4.2.1 ICT Governance
 
@@ -141,4 +140,3 @@ New technologies are seen as a challenge to cultural traditions and communal act
 
 Additionally, the Principles for Digital Development are especially relevant when designing for low resource setting. Refer to [https://digitalprinciples.org/](https://digitalprinciples.org) for information on these Principles.
 
-Each building block specification SHOULD specify mitigations for these issues.

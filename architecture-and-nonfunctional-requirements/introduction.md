@@ -10,24 +10,9 @@ GovStack aims to provide a reference architecture for digital governance softwar
 
 ## 2.2 Criteria for Building Blocks
 
-The following provide criteria and definitions for Building Blocks, developed by organizations whose work is focused around achievement of the Sustainable Development Goals (SDGs).
+The following provide criteria and definitions for Building Blocks, developed by organizations whose work is focused around achievement of the Sustainable Development Goals (SDGs). The criteria are drawn from the [SDG Digital Investment Framework](https://dial.global/research/sdg-digital-investment-framework/), developed by the International Telecommunication Union (ITU) and the Digital Impact Alliance (DIAL), as well as the [definition of Building Blocks](https://digitalpublicgoods.net/DPI-DPG-BB-Definitions.pdf) developed by the Digital Public Goods Alliance (DPGA):
 
-### SDG Digital Investment Framework
-
-The [SDG Digital Investment Framework](https://dial.global/research/sdg-digital-investment-framework/), developed by the International Telecommunication Union (ITU) and the Digital Impact Alliance (DIAL), has formally defined criteria. Building blocks MUST meet the following criteria:
-
-* Reusable software components
-* Licensed as open source, proprietary, or freely available with Open Access to data
-* Facilitates one or more generic Workflows
-* Applicable to multiple SDG Use Cases across multiple sectors
-* Interoperable with other ICT Building Blocks
-* Designed for Scalability
-* Designed for Extensibility
-* Standards Based Conformance or Compliance
-
-### Digital Public Goods Alliance (DPGA)
-
-Additionally, the Digital Public Goods Alliance has created a [definition of Building Blocks](https://digitalpublicgoods.net/DPI-DPG-BB-Definitions.pdf). In this definition, a building block:
+### A Building Block:
 
 * Refers to software code, platforms, and applications that are interoperable, provide a basic digital service at scale, and can be reused for multiple use cases and contexts.
 * Serves as a component of a larger system or stack.
@@ -50,11 +35,11 @@ Per the DPGA definition, to be considered a building block, solutions must meet 
 2. Packaged in a container
 3. Include a information mediator where communication flows between services that are not co-located
 
-## 2.3 Building Blocks
+## 2.3 Building Block Layers
 
 Building blocks are software modules that can be deployed and combined in a standardized manner. Each building block is capable of working independently, but they can be combined to do much more:
 
-![](<../.gitbook/assets/image5 (2).png>)
+<figure><img src="../.gitbook/assets/31.-A-common-reusable-stack-of-Building-Blocks_2 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 Building blocks are composable, interoperable software modules that can be used across a variety of use cases. They are standards-based, open source and designed for scale.
 
@@ -66,19 +51,11 @@ Building Blocks exchange data using lightweight, human-readable data that can ea
 
 ![](../.gitbook/assets/image3.png)
 
-### 2.3.1 Building Blocks and UI/UX
-
-A building block may also be an application which provides re-usable interfaces:
-
-1. An **admin-only form builder** which facilitates building user interfaces (e.g., select questions to be displayed in a maternal-and-child-health registration process)
-2. **User interfaces** (i.e., forms) which can be used in lieu of individual end-user apps building their own forms (e.g. I’m building a _new_ maternal and child health application; I’d like to use a registration screen flow that’s been pre-built in the registration building block as part of a larger, _composed_ application.)
-3. A **public API** which exposes the critical **back-end services** performed by this BB (adding a mom to a database; checking for a mom’s enrollment status in a program) to be used (as a microservice) by existing or new applications with legacy/bespoke needs (e.g., i’ve already got a maternal and child health app that the CHWs are using, and I want to send a webhook to the registration BB after a CHW clicks “submit” on our custom form.)
-
 ## 2.4 Cross-Building Block Communication
 
 A building block is only so useful on its own. In practice, building blocks MUST be connected together in a secure, robust, trusted manner that facilitates distributed deployments and communications with existing services.
 
-It is STRONGLY RECOMMENDED that a building block use an information mediator (as described below and in the [Information Mediator Building Block specification](https://govstack.gitbook.io/bb-information-mediation)) for any communications across the internet. An Information Mediator is not required for communication between building blocks which are co-located. In this case, communication may occur using standard API calls.
+It is STRONGLY RECOMMENDED that a building block uses an information mediator (as described below and in the [Information Mediator Building Block specification](https://govstack.gitbook.io/bb-information-mediation)) for any communications across the internet. An Information Mediator is not required for communication between building blocks which are co-located. In this case, communication may occur using standard API calls.
 
 ### 2.4.1 Federation and Data Exchange Requirements
 
@@ -105,7 +82,7 @@ In order to effectively deploy a software solution using the Information Mediato
 
 First, a central operator will be identified and created. This organization will be responsible for the overall operation of the system, including operations and onboarding new members. Policies and contractual agreements for onboarding need to be created.
 
-Trust services need to be set up internally or procured from third parties, including timestamp and certificate authorities. This provides the necessary infrastructure to support distributed deployments.
+Next, trust services need to be set up internally or procured from third parties, including timestamp and certificate authorities. This provides the necessary infrastructure to support distributed deployments.
 
 Finally, members can be onboarded and provided with access to the Information Mediator and methods to register the services that they provide as well as discover services that are available.
 
@@ -139,4 +116,3 @@ The following provides definitions for terms that are used by various building b
 * (Workflow) Activity - a single step in a workflow process.
 * (Workflow) Process - a workflow process contains one or many activities.
 * (Workflow) Instance - an instance of execution for a workflow process.
-

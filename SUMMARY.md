@@ -10,7 +10,7 @@
   * [5 Cross-Cutting Requirements](architecture-and-nonfunctional-requirements/5-cross-cutting-requirements.md)
   * [6 Onboarding Products](architecture-and-nonfunctional-requirements/6-onboarding.md)
   * [7 Standards](architecture-and-nonfunctional-requirements/7-standards.md)
-  * [8 UX Switching and Handover](architecture-and-nonfunctional-requirements/8-future-considerations.md)
+  * [8 UX Switching and Handover](architecture-and-nonfunctional-requirements/8-ux-switching.md)
   * [9 Other Resources](architecture-and-nonfunctional-requirements/9-other-resources.md)
 * [Security Requirements](security-requirements/README.md)
   * [2 Description](security-requirements/2-description.md)
