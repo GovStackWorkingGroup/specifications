@@ -5,7 +5,7 @@
 * [Code of Conduct](code-of-conduct.md)
 * [Architecture and Nonfunctional Requirements](architecture-and-nonfunctional-requirements/README.md)
   * [2 Introduction](architecture-and-nonfunctional-requirements/introduction.md)
-  * [3 GovStack Architecture](architecture-and-nonfunctional-requirements/3-considerations.md)
+  * [3 GovStack Architecture](architecture-and-nonfunctional-requirements/3-govstack-architecture.md)
   * [4 Building Block Design Principles and Considerations](architecture-and-nonfunctional-requirements/4-building-block-design-principles.md)
   * [5 Cross-Cutting Requirements](architecture-and-nonfunctional-requirements/5-cross-cutting-requirements.md)
   * [6 Onboarding Products](architecture-and-nonfunctional-requirements/6-onboarding.md)
@@ -21,6 +21,14 @@
   * [7 Authorization Services](security-requirements/7-auth-services.md)
   * [8 Additional Security Modules](security-requirements/8-additional-security-modules.md)
   * [9 Other Resources](security-requirements/9-other-resources.md)
+* [GovStack UI/UX Guidelines](govstack-ui-ux-guidelines/README.md)
+  * [Description](govstack-ui-ux-guidelines/description.md)
+  * [Service Design Good Practice Guidelines](govstack-ui-ux-guidelines/service-design-good-practice-guidelines/README.md)
+    * [Good practice guidelines (checklist)](govstack-ui-ux-guidelines/service-design-good-practice-guidelines/good-practice-guidelines-checklist.md)
+    * [1. User centered design](govstack-ui-ux-guidelines/service-design-good-practice-guidelines/1.-user-centered-design/README.md)
+      * [Understand needs and requirements](govstack-ui-ux-guidelines/service-design-good-practice-guidelines/1.-user-centered-design/understand-needs-and-requirements.md)
+      * [Involve others in the design process](govstack-ui-ux-guidelines/service-design-good-practice-guidelines/1.-user-centered-design/involve-others-in-the-design-process.md)
+      * [Test with users](govstack-ui-ux-guidelines/service-design-good-practice-guidelines/1.-user-centered-design/test-with-users.md)
 
 ## Building Blocks
 
