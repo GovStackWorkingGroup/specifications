@@ -21,5 +21,7 @@ Empower users to take an active role in co-creating and co-designing public serv
 
 1. Carry out user research activities, like interviews and surveys, to understand user needs.
 2. Hold co-design sessions with users for them to participate directly in the design process.
-3. Conduct [usability testing ](broken-reference)with real users to identify issues and opportunities for improvement.
-4. [Collect user feedback](broken-reference) post-launch.
+3. Conduct [usability testing ](test-with-users.md)with real users to identify issues and opportunities for improvement.
+4. [Collect user feedback](monitor-performance/) post-launch.
+
+&#x20;
