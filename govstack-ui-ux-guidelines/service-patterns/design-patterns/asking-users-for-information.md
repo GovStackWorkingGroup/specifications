@@ -14,7 +14,7 @@ If you ask people for optional information, add ‘(optional)’ to the question
 
 #### &#x20;Question page
 
-<figure><img src="../../.gitbook/assets/Question page (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Question page (1).png" alt=""><figcaption></figcaption></figure>
 
 **Service name**
 

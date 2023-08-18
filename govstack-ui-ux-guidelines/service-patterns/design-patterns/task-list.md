@@ -9,7 +9,7 @@ description: >-
 
 Use clear labels for each step and provide a visual indicator of their progress. Show the order in which the steps should be completed and mark completed tasks.&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Components of the task list page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Components of the task list page</p></figcaption></figure>
 
 ## How it works
 

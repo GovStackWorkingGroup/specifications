@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="../../.gitbook/assets/Satisfaction.png" alt=""><figcaption><p>Wireframe showing satisfaction page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Satisfaction.png" alt=""><figcaption><p>Wireframe showing satisfaction page</p></figcaption></figure>
 
 ## **How it Works**
 

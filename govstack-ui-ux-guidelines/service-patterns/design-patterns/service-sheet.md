@@ -4,7 +4,7 @@ description: Use this pattern to help users check if they are ready to start a s
 
 # Service sheet
 
-<figure><img src="../../.gitbook/assets/Service sheet.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Service sheet.png" alt=""><figcaption></figcaption></figure>
 
 ## How it works
 

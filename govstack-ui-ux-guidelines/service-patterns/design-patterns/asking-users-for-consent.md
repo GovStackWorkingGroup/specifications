@@ -8,7 +8,7 @@ description: >-
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/Asking for consent.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Asking for consent.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -45,21 +45,21 @@ User journey considerations:
 
 <div align="center" data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/Consent for a single data set.png" alt=""><figcaption><p>A wireframe of consent for a single data set</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Consent for a single data set.png" alt=""><figcaption><p>A wireframe of consent for a single data set</p></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/Consent for a single data set mockups.png" alt=""><figcaption><p>A mockup of consent for a single data set</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Consent for a single data set mockups.png" alt=""><figcaption><p>A mockup of consent for a single data set</p></figcaption></figure>
 
 </div>
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/Consent for multiple data sets.png" alt=""><figcaption><p>A wireframe of consent multiple data sets</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Consent for multiple data sets.png" alt=""><figcaption><p>A wireframe of consent multiple data sets</p></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/Consent for multiple data set mockups.png" alt=""><figcaption><p>A mockup of consent for multiple  data sets</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Consent for multiple data set mockups.png" alt=""><figcaption><p>A mockup of consent for multiple  data sets</p></figcaption></figure>
 
 </div>
 
@@ -104,6 +104,6 @@ In cases where the person giving consent is doing so on behalf of someone else, 
 
 When asking users information during a questions flow consider using progressive disclosure drop-downs or inline content to explain why you are asking for that information and how you will handle the data.
 
-<figure><img src="../../.gitbook/assets/Details for information (1).png" alt=""><figcaption><p>A wireframe of an example progressive disclosure details pattern</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Details for information (1).png" alt=""><figcaption><p>A wireframe of an example progressive disclosure details pattern</p></figcaption></figure>
 
 ###
