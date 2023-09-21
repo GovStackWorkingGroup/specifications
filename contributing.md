@@ -40,5 +40,6 @@ Other people may prefer to interact with the GovStack specifications by proposin
 
 Finally, some people might prefer to simply send an email:
 
+
 1. Send an email to the GovStack issue queue, describing the change you think should be made and include a link to the public page of the part of the specification that needs the change
 2. An issue in our issue queue will be automatically created and a maintainer will be in contact with you to work on the change together.

@@ -6,11 +6,4 @@ Building blocks are composable, interoperable software modules that can be used 
 
 Each building block exposes a set of services in the form of REST APIs that can be consumed by other building blocks or applications.
 
-In this release of the GovStack specification, the following building blocks are specified:
-
-* [Information Mediation](https://govstack.gitbook.io/bb-information-mediation)
-* [Registration](https://govstack.gitbook.io/bb-registration)
-* [Digital Registries](https://govstack.gitbook.io/bb-digital-registries)
-* [Identity and Verification](https://govstack.gitbook.io/bb-identity)
-* [Payments](https://govstack.gitbook.io/bb-payments)
-
+Please browse the building blocks that are specified in this release in the menu to the left.
