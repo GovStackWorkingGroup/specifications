@@ -2,7 +2,6 @@
 
 * [GovStack](README.md)
 * [Contributing](contributing.md)
-* [Code of Conduct](code-of-conduct.md)
 * [Architecture and Nonfunctional Requirements](architecture-and-nonfunctional-requirements/README.md)
   * [2 Introduction](architecture-and-nonfunctional-requirements/introduction.md)
   * [3 GovStack Architecture](architecture-and-nonfunctional-requirements/3-govstack-architecture.md)
