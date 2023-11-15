@@ -1,2 +1,0 @@
-# Design cross-channel
-

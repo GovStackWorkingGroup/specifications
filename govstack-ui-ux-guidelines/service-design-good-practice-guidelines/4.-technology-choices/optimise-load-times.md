@@ -1,2 +1,0 @@
-# Optimise load times
-

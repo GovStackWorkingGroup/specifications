@@ -1,2 +1,0 @@
-# Understand needs and requirements
-
