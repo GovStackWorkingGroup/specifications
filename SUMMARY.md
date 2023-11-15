@@ -21,7 +21,6 @@
   * [8 Additional Security Modules](security-requirements/8-additional-security-modules.md)
   * [9 Other Resources](security-requirements/9-other-resources.md)
 * [GovStack UI/UX Guidelines](govstack-ui-ux-guidelines/README.md)
-* [UI/UX Specifications](govstack-ui-ux-guidelines/README.md)
   * [1 Version History](govstack-ui-ux-guidelines/1-version-history.md)
   * [2 Description](govstack-ui-ux-guidelines/2-description.md)
   * [Service design good practice guidelines](govstack-ui-ux-guidelines/service-design-good-practice-guidelines/README.md)
