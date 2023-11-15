@@ -56,7 +56,7 @@
     * [Get started using patterns](govstack-ui-ux-guidelines/service-patterns/get-started-using-patterns.md)
     * [Service patterns](govstack-ui-ux-guidelines/service-patterns/service-patterns/README.md)
       * [Register](govstack-ui-ux-guidelines/service-patterns/service-patterns/register.md)
-      * [Authenticate](govstack-ui-ux-guidelines/service-patterns/design-patterns/authentication.md)
+      * [Authenticate](govstack-ui-ux-guidelines/service-patterns/service-patterns/authenticate.md)
       * [Asking users for feedback](govstack-ui-ux-guidelines/service-patterns/service-patterns/asking-users-for-feedback.md)
       * [Find a service](govstack-ui-ux-guidelines/service-patterns/service-patterns/find-a-service.md)
       * [Check a users eligibility](govstack-ui-ux-guidelines/service-patterns/service-patterns/check-a-users-eligibility.md)
@@ -79,7 +79,7 @@
       * [Check answers](govstack-ui-ux-guidelines/service-patterns/design-patterns/check-answers.md)
       * [Outcome](govstack-ui-ux-guidelines/service-patterns/design-patterns/outcome.md)
       * [Sending notifications](govstack-ui-ux-guidelines/service-patterns/design-patterns/sending-notifications.md)
-  * [Use-case examples](govstack-ui-ux-guidelines/service-patterns/use-case-examples.md)
+  * [Use-case examples](govstack-ui-ux-guidelines/use-case-examples.md)
   * [Other Resources](govstack-ui-ux-guidelines/10-other-resources.md)
 
 ## Building Blocks
