@@ -2,5 +2,5 @@
 
 
 
-Developed by: `Laurence Berry (Komo.international), Betty Mwema (UK Government Digital Service), Dr.P.S.Ramkumar(ITU)` in cooperation with GIZ, ITU, DIAL, and the Government of Estonia
+Developed by Laurence Berry ([Komo.international](https://komo.international/)), Betty Mwema ([Government Digital Service of the United Kingdom](https://www.gov.uk/government/organisations/government-digital-service)), Dr. P. S. Ramkumar ([ITU](https://www.itu.int/en/Pages/default.aspx))
 
