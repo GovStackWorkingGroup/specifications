@@ -10,7 +10,7 @@ Accessibility is important because it allows services to give equal access to al
 
 There could be significant interdependencies between UI components for different accessibility requirements. The World Wide Web Consortium and Web Accessibility Initiative have developed standards for considering the needs of developers ([WCAG, ATAG, UAAG](https://www.w3.org/WAI/fundamentals/components/#guidelines)), authoring tools, accessibility evaluation tools, and guidelines on how to make user agents (browsers, browser extensions, media players, readers) accessible to users.
 
-[Test for accessibility](https://app.gitbook.com/o/pxmRWOPoaU8fUAbbcrus/s/Xygp83qW0E147CCaqsI0/\~/changes/99/service-design-good-practice-guidelines/3.2-accessibility-and-inclusion/test-for-accessibility)
+[Test for accessibility](3.2.1.1-test-for-accessibility.md)
 
 ## 3.2.2 Test your service with diverse users
 

@@ -81,7 +81,7 @@
       * [6.16 Sending notifications](govstack-ui-ux-guidelines/service-patterns/6-page-templates/7.16-sending-notifications.md)
   * [7 Use-case examples](govstack-ui-ux-guidelines/service-patterns/7-use-case-examples.md)
   * [8 References](govstack-ui-ux-guidelines/service-patterns/8-references.md)
-  * [10 Other Resources](govstack-ui-ux-guidelines/10-other-resources.md)
+  * [9 Other Resources](govstack-ui-ux-guidelines/10-other-resources.md)
 
 ## Building Blocks
 
