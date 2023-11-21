@@ -26,14 +26,14 @@ Use analytics tools to collect data on these KPIs. Google Analytics is a popular
 
 Implement a mechanism to collect user satisfaction data at the end of key user journeys. This could be a survey or a simple rating system.
 
-[See the pattern for collecting feedback](../../../service-patterns/5-user-flows/6.3-asking-users-for-feedback.md)
+[See the pattern for collecting feedback](../../../4-design-patterns/5-user-flows/6.3-asking-users-for-feedback.md)
 
 ### **Collect feedback throughout the user journey**
 
 Do not wait until the end of the journey to collect feedback. Implement feedback mechanisms at key points throughout the user journey. This could be feedback forms on individual pages, live chat options, or proactive prompts asking users if they need help.
 
-[See the pattern for collecting feedback](../../../service-patterns/5-user-flows/6.3-asking-users-for-feedback.md)
+[See the pattern for collecting feedback](../../../4-design-patterns/5-user-flows/6.3-asking-users-for-feedback.md)
 
 ### **Regularly review and act on data**
 
-Set a regular schedule to review your KPIs and user feedback. Use this data to identify issues and opportunities for improvement, and take action accordingly.&#x20;
+Set a regular schedule to review your KPIs and user feedback. Use this data to identify issues and opportunities for improvement, and take action accordingly.
