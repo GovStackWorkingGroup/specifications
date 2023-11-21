@@ -1,43 +1,31 @@
 ---
 description: >-
-  Design standards, guidance and patterns for designing services using GovStack
-  building blocks.
+  Design standards, guidance, and patterns for designing services using GovStack
+  Building Blocks.
 ---
 
-# Description
+# 2 Description
 
-## Introduction
+This document has been developed as guidance to kick-start the design and development of services that use and combine GovStack applications and Building Blocks, as well as other components while maintaining a seamless and consistent user experience.
 
-This document has been developed as a guidance to kick-start the design and development of UI/UX layer for using the GovStack applications and building blocks.
+This guidance supports teams in identifying and implementing the foundations for designing user-centered, accessible, consistent, and technically robust services. Intended to help teams align to the [GovStack Design Principles](https://govstack.gitbook.io/implementation-playbook/govstack-implementation-playbook/govstack-design-principles) and the [Implementation Playbook](https://govstack.gitbook.io/implementation-playbook/).
 
-This guidance supports teams identify and implement the foundations for designing user-centred, accessible, consistent and technically robust Ui/UX across Govstack components.
+## 2.1 Current scope
 
-This guidance is intended to help teams align to the [GovStack Design Principles](https://govstack.gitbook.io/implementation-playbook/govstack-implementation-playbook/govstack-design-principles) and the [Implementation Playbook](https://govstack.gitbook.io/implementation-playbook/).
+Specifications for how to implement accessible, responsive, multi-modal Building Blocks and provide a consistent service.
 
-## Current scope
+* Guidelines for designing interfaces (like meeting [WCAG accessibility guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/)).
+* Screen flows for common user journeys (like registration).
+* Guidance on technical choices (like how to design for low bandwidth, high latency environments, unreliable connectivity, local storage, local persistence of data security using DOMs, etc.).
+* Patterns for managing client-side validation.
 
-Specifications for how to implement accessible, responsive, multi-modal building blocks and providing a consistent service.
+## 2.2 Good practice UI/UX guidelines for Service Design&#x20;
 
-* Guidelines for designing interfaces, like meeting WCAG accessibility guidelines
-* Screen flows for common user journeys, like registration
-* Guidance on technical choices, like how to design for low bandwidth, high latency environments or unreliable connectivity, local storage and local persistence of data, security using DOMs etc
-* patterns for managing client-side validation
+The guidelines act as a template checklist for assuring the quality of a service's design and delivery. Each point in the guideline has/links to additional guidance.
 
-### good practice UI/UX guidelines for Service design&#x20;
+## 2.3 Service patterns
 
-The guidelines act as a template checklist for assuring the quality of a service's design and delivery. Each point in the guideline has, or links to additional guidance.
-
-### Service patterns
-
-We chose to define high-level service patterns rather than anything more specific like a design system or user interface components, this is to maintain flexibility to work around each organisation's needs and existing design assets and front-end frameworks.
-
-## Out of scope
-
-Developing tools for implementing design patterns like:
-
-* design systems
-* user interface components or code
-* styleguides
+We chose to define high-level service patterns rather than anything more specific like a design system or user interface components, this is to maintain flexibility to work around each organization's needs and existing design assets and front-end frameworks.
 
 
 
