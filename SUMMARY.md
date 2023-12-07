@@ -80,9 +80,9 @@
 * [About Building Blocks](building-blocks/about-building-blocks.md)
 * [Consent](https://govstack.gitbook.io/bb-consent/v/consent-1.0/)
 * [Digital Registries](https://govstack.gitbook.io/bb-digital-registries/v/digital-registries-1.0/)
-* [eMarketplace](https://govstack.gitbook.io/bb-emarketplace/)
-* [eSignature](https://govstack.gitbook.io/bb-esignature)
-* [GIS](https://govstack.gitbook.io/bb-gis)
+* [E-Marketplace](https://govstack.gitbook.io/bb-emarketplace/)
+* [E-Signature](https://govstack.gitbook.io/bb-esignature)
+* [Geographic Information System (GIS)](https://govstack.gitbook.io/bb-gis)
 * [Identity](https://govstack.gitbook.io/bb-identity/v/identity-1.0/)
 * [Information Mediation](https://govstack.gitbook.io/bb-information-mediation/v/information-mediation-1.0)
 * [Messaging](https://govstack.gitbook.io/bb-messaging/v/messaging-1.0/)
@@ -94,3 +94,12 @@
 ## Use Cases
 
 * [Reference Use Cases](https://govstack.gitbook.io/use-cases/v/product-use-cases-1.0)
+
+## Tools
+
+* [Sandbox](https://govstack.gitbook.io/sandbox/)
+
+***
+
+* [Release Notes](release-notes/README.md)
+  * [23Q4](release-notes/23q4.md)
