@@ -4,7 +4,7 @@ description: >-
   following the points in this guide
 ---
 
-# 3 Good practice guidelines
+# 3 Service design good practice guidelines
 
 ## 3.1 User-centred design
 
