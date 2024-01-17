@@ -78,22 +78,22 @@
 ## Building Blocks
 
 * [About Building Blocks](building-blocks/about-building-blocks.md)
-* [Consent](https://govstack.gitbook.io/bb-consent/v/consent-1.0/)
-* [Digital Registries](https://govstack.gitbook.io/bb-digital-registries/v/digital-registries-1.0/)
-* [E-Marketplace](https://govstack.gitbook.io/bb-emarketplace/)
-* [E-Signature](https://govstack.gitbook.io/bb-esignature)
-* [Geographic Information System (GIS)](https://govstack.gitbook.io/bb-gis)
-* [Identity](https://govstack.gitbook.io/bb-identity/v/identity-1.0/)
-* [Information Mediation](https://govstack.gitbook.io/bb-information-mediation/v/information-mediation-1.0)
-* [Messaging](https://govstack.gitbook.io/bb-messaging/v/messaging-1.0/)
-* [Payments](https://govstack.gitbook.io/bb-payments/v/payments-1.0/)
-* [Registration](https://govstack.gitbook.io/bb-registration/v/registration-1.0/)
-* [Scheduler](https://govstack.gitbook.io/bb-scheduler/v/scheduler-1.0.1/)
-* [Workflow](https://govstack.gitbook.io/bb-workflow/v/workflow-1.0.1/)
+* [Consent](https://govstack.gitbook.io/bb-consent/v/con-23q4)
+* [Digital Registries](https://govstack.gitbook.io/bb-digital-registries/v/dr-23q4)
+* [E-Marketplace](https://govstack.gitbook.io/bb-emarketplace/v/mkt-23q4)
+* [E-Signature](https://govstack.gitbook.io/bb-esignature/v/sig-23q4)
+* [Geographic Information System (GIS)](https://govstack.gitbook.io/bb-gis/v/gis-23q4)
+* [Identity](https://govstack.gitbook.io/bb-identity/v/id-23q4)
+* [Information Mediation](https://govstack.gitbook.io/bb-information-mediation/v/im-23q4)
+* [Messaging](https://govstack.gitbook.io/bb-messaging/v/msg-23q4)
+* [Payments](https://govstack.gitbook.io/bb-payments/v/pay-23q4)
+* [Registration](https://govstack.gitbook.io/bb-registration/v/reg-23q4)
+* [Scheduler](https://govstack.gitbook.io/bb-scheduler/v/skd-23q4)
+* [Workflow](https://govstack.gitbook.io/bb-workflow/v/wf-23q4)
 
 ## Use Cases
 
-* [Reference Use Cases](https://govstack.gitbook.io/use-cases/v/product-use-cases-1.0)
+* [Reference Use Cases](https://govstack.gitbook.io/use-cases/v/ruc-23q4)
 
 ## Tools
 
