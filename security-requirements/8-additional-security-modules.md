@@ -451,7 +451,7 @@ The following sequence diagrams depict the basic means by which authentication a
 
 #### **8.4.1.1 User authentication and authorization**
 
-![See https://www.websequencediagrams.com/  for an editable diagram](<../.gitbook/assets/www.websequencediagrams.com (1).png>)
+![See https://www.websequencediagrams.com/  for an editable diagram](../.gitbook/assets/www.websequencediagrams.com.png)
 
 This assumes the user already has an account. Authentication credentials are username or phone number and password.
 
@@ -459,7 +459,7 @@ The auth token could be signed with an expiration (JWT) which might allow the BB
 
 #### **8.4.1.2 Self-registration via phone number or email**
 
-![See https://www.websequencediagrams.com/  for an editable diagram](<../.gitbook/assets/www.websequencediagrams.com (4).png>)
+![See https://www.websequencediagrams.com/  for an editable diagram](<../.gitbook/assets/www.websequencediagrams.com (1).png>)
 
 #### **8.4.1.3 Self-registration via foundational ID**
 
@@ -473,7 +473,7 @@ The users are authorized with a valid access token for their email or phone numb
 
 #### **8.4.1.4 Self-deprovisioning via foundational ID**
 
-![See https://www.websequencediagrams.com/  for an editable diagram](../.gitbook/assets/www.websequencediagrams.com.png)
+![See https://www.websequencediagrams.com/  for an editable diagram](<../.gitbook/assets/www.websequencediagrams.com (4).png>)
 
 This flow assumes the user has an account and is currently authenticated.
 
@@ -497,6 +497,6 @@ The security building block predominantly deals with the cross-cutting security 
 
 The sequence diagrams below depict examples of how a building block might interact with the API Management and Gateway solution. This is only relevant for the API Management and Gateway services in the context of the security building block. A higher level sequence diagram depicting API interactions for building blocks is depicted and documented in Architecture Blueprint and Functional Requirements (see Ref 1).
 
-![Example Sequence for Issuing a Token for API Access](<../.gitbook/assets/image8 (1) (1).png>)
+![Example Sequence for Issuing a Token for API Access](../.gitbook/assets/image8.png)
 
-![Example Sequence for Calling an API Microservice via Gatewa](<../.gitbook/assets/image7 (1) (1) (1).png>)
+![Example Sequence for Calling an API Microservice via Gatewa](<../.gitbook/assets/image7 (3).png>)

@@ -71,8 +71,8 @@
       * [4.3.8 Asking users for information](govstack-ui-ux-guidelines/4-design-patterns/6-page-templates/7.12-asking-users-for-information.md)
       * [4.3.9 Check answers](govstack-ui-ux-guidelines/4-design-patterns/6-page-templates/7.14-check-answers.md)
       * [4.3.10 Outcome](govstack-ui-ux-guidelines/4-design-patterns/6-page-templates/7.15-outcome.md)
-  * [5 Use-case examples](govstack-ui-ux-guidelines/service-patterns/7-use-case-examples.md)
-  * [6 References](govstack-ui-ux-guidelines/service-patterns/8-references.md)
+  * [5 Use-case examples](govstack-ui-ux-guidelines/7-use-case-examples.md)
+  * [6 References](govstack-ui-ux-guidelines/8-references.md)
   * [7 Other Resources](govstack-ui-ux-guidelines/10-other-resources.md)
 
 ## Building Blocks
