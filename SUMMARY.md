@@ -78,14 +78,14 @@
 ## Building Blocks
 
 * [About Building Blocks](building-blocks/about-building-blocks.md)
-* [Consent](https://govstack.gitbook.io/bb-consent/v/con-23q4)
+* [Consent](https://govstack.gitbook.io/bb-consent/v/con-23q4.1)
 * [Digital Registries](https://govstack.gitbook.io/bb-digital-registries/v/dr-23q4)
 * [E-Marketplace](https://govstack.gitbook.io/bb-emarketplace/v/mkt-23q4)
 * [E-Signature](https://govstack.gitbook.io/bb-esignature/v/sig-23q4)
 * [Geographic Information System (GIS)](https://govstack.gitbook.io/bb-gis/v/gis-23q4)
 * [Identity](https://govstack.gitbook.io/bb-identity/v/id-23q4.1/)
 * [Information Mediation](https://govstack.gitbook.io/bb-information-mediation/v/im-23q4)
-* [Messaging](https://govstack.gitbook.io/bb-messaging/v/msg-23q4)
+* [Messaging](https://govstack.gitbook.io/bb-messaging/v/msg-23q4.1)
 * [Payments](https://govstack.gitbook.io/bb-payments/v/pay-23q4)
 * [Registration](https://govstack.gitbook.io/bb-registration/v/reg-23q4)
 * [Scheduler](https://govstack.gitbook.io/bb-scheduler/v/skd-23q4)
