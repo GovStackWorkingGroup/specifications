@@ -95,6 +95,10 @@
 
 * [Reference Use Cases](https://govstack.gitbook.io/use-cases/v/ruc-23q4)
 
+## Public Administration Ecosystem Reference Architecture
+
+* [PAERA](https://govstack.gitbook.io/paera/)
+
 ## Tools
 
 * [Sandbox](https://govstack.gitbook.io/sandbox/)
