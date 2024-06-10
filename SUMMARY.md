@@ -38,7 +38,3 @@
 ## Use Cases
 
 * [Reference Use Cases](https://govstack.gitbook.io/use-cases/v/product-use-cases-1.0)
-
-## Public Administration Ecosystem Reference Architecture (PAERA)
-
-* [PAERA](https://govstack.gitbook.io/paera)
