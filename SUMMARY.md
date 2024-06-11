@@ -97,7 +97,7 @@
 
 ## Public Administration Ecosystem Reference Architecture (PAERA)
 
-* [PAERA](https://govstack.gitbook.io/paera)
+* [PAERA](https://govstack.gitbook.io/paera-doc)
 
 ## Tools
 
