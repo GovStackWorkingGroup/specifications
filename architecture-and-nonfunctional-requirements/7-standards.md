@@ -27,10 +27,9 @@ Used for implementing APIs
 
 {% embed url="https://en.wikipedia.org/wiki/Representational_state_transfer" %}
 
-## 7.6 OpenAPI 3.1 (AKA Swagger)
+## 7.6 OpenAPI (AKA Swagger)
 
-Used for specifying and documenting APIs.\
-[https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md)\
+Used for specifying and documenting APIs. Use latest version: [https://swagger.io/specification/](https://swagger.io/specification/)\
 Note that OpenAPI 3.1 supports inline JSONSchema for model definitions
 
 ## 7.7 Docker/Docker Compose/OCI Containers
@@ -38,6 +37,6 @@ Note that OpenAPI 3.1 supports inline JSONSchema for model definitions
 Used for packaging building block components for deployment [https://en.wikipedia.org/wiki/Docker\_(software)](https://en.wikipedia.org/wiki/Docker\_\(software\))\
 [https://www.docker.com/resources/what-container](https://www.docker.com/resources/what-container)
 
-### 7.8 QR code&#x20;
+### 7.8 QR code
 
 Must be generated with the ISO/IEC 18004:2015 standard
