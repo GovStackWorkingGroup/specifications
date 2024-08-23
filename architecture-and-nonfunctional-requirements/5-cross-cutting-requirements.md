@@ -2,7 +2,7 @@
 
 Building blocks are responsible for meeting all cross-cutting requirements or specifying why specific requirements do not apply. Govstack compliance and certification processes will validate these requirements.
 
-## 5.1 Follow TM Forum Specification REST API Design Guidelines Part 1 (REQUIRED) <a href="#_wyofs1ddrlgk" id="_wyofs1ddrlgk"></a>
+## 5.1 Follow TM Forum Specification REST API Design Guidelines Part 1 (REQUIRED) <a href="#wyofs1ddrlgk" id="wyofs1ddrlgk"></a>
 
 See: [TM Forum REST API Design Guidelines](https://www.tmforum.org/resources/specification/tmf630-rest-api-design-guidelines-4-2-0/)
 
@@ -14,7 +14,7 @@ Some key principles from these design guidelines are as follows:
 * Resource manipulation through representations. When a client holds a representation of a resource, including any [metadata ](https://en.wikipedia.org/wiki/Metadata)attached, it has enough information to modify or delete the resource's state.
 * Self-descriptive messages Each message includes enough information to describe how to process the message. For example, which parser to invoke can be specified by a [media type](https://en.wikipedia.org/wiki/Media\_type).
 
-## 5.2 Follow TM Forum Specification REST API Design Guidelines Parts 2-7 (RECOMMENDED) <a href="#_19suuzwtdje" id="_19suuzwtdje"></a>
+## 5.2 Follow TM Forum Specification REST API Design Guidelines Parts 2-7 (RECOMMENDED) <a href="#id-19suuzwtdje" id="id-19suuzwtdje"></a>
 
 See: [TM Forum REST API Design Guidelines](https://www.tmforum.org/resources/specification/tmf630-rest-api-design-guidelines-4-2-0/)
 
@@ -44,8 +44,8 @@ Documentation on the installation and use of the Building Block MUST be provided
 
 Each building block’s service APIs MUST be defined and exposed using a standardized machine-readable language. External APIs are described using the OpenAPI 3.x specification. See the following resources for additional information:
 
-* [Definition of the OpenAPI standard ](https://swagger.io/docs/specification/about/)
-* [Swagger OpenAPI 3.0 Specification ](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md)
+* [Definition of the OpenAPI standard](https://swagger.io/docs/specification/about/)
+* [Swagger OpenAPI 3.0 Specification](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md)
 
 ## 5.7 Building blocks must be deployable as a container (REQUIRED)
 
@@ -70,7 +70,7 @@ When Building Blocks require callback functionality, they must use webhooks and 
 
 ## 5.12 Enforce Transport Security (REQUIRED)
 
-All Building Blocks MUST support secure HTTPS transport with TLS 1.3 and insecure cyphers disabled.
+All Building Blocks MUST support secure HTTPS transport with latest TLS and insecure cyphers disabled.
 
 ## 5.13 GET and PUT APIs must be Idempotent (REQUIRED)
 
@@ -138,7 +138,7 @@ Where precise timestamps are required, building blocks SHOULD leverage Network T
 
 Software development best practices are recommended for all building blocks. The following guidelines should be followed as part of the software development process.
 
-### EOL SHOULD be at Least 5 Years <a href="#_fo8til974qj2" id="_fo8til974qj2"></a>
+### EOL SHOULD be at Least 5 Years <a href="#fo8til974qj2" id="fo8til974qj2"></a>
 
 No languages, frameworks, or dependencies should be used in a building block where that component has an EOL of less than 5 years.
 
