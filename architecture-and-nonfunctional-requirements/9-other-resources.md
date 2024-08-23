@@ -1,3 +1,3 @@
 # 9 Other Resources
 
-GovStack Reference Architecture document
+{% embed url="https://govstack.gitbook.io/paera-doc" %}
