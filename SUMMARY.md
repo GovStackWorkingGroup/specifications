@@ -20,6 +20,11 @@
   * [7 Authorization Services](security-requirements/7-auth-services.md)
   * [8 Additional Security Modules](security-requirements/8-additional-security-modules.md)
   * [9 Other Resources](security-requirements/9-other-resources.md)
+* [Digital Sovereignty - Cloud Infrastructure](digital-sovereignty-cloud-infrastructure/README.md)
+  * [Abstract](digital-sovereignty-cloud-infrastructure/abstract.md)
+  * [Digital sovereign cloud technology](digital-sovereignty-cloud-infrastructure/digital-sovereign-cloud-technology.md)
+  * [Digital Sovereignty considerations](digital-sovereignty-cloud-infrastructure/digital-sovereignty-considerations.md)
+  * [Architectural graphics](digital-sovereignty-cloud-infrastructure/architectural-graphics.md)
 * [GovStack UI/UX Guidelines](govstack-ui-ux-guidelines/README.md)
   * [1 Version History](govstack-ui-ux-guidelines/1-version-history.md)
   * [2 Description](govstack-ui-ux-guidelines/2-description.md)
@@ -71,8 +76,8 @@
       * [4.3.8 Asking users for information](govstack-ui-ux-guidelines/4-design-patterns/6-page-templates/7.12-asking-users-for-information.md)
       * [4.3.9 Check answers](govstack-ui-ux-guidelines/4-design-patterns/6-page-templates/7.14-check-answers.md)
       * [4.3.10 Outcome](govstack-ui-ux-guidelines/4-design-patterns/6-page-templates/7.15-outcome.md)
-  * [5 Use-case examples](govstack-ui-ux-guidelines/7-use-case-examples.md)
-  * [6 References](govstack-ui-ux-guidelines/8-references.md)
+  * [5 Use-case examples](govstack-ui-ux-guidelines/service-patterns/7-use-case-examples.md)
+  * [6 References](govstack-ui-ux-guidelines/service-patterns/8-references.md)
   * [7 Other Resources](govstack-ui-ux-guidelines/10-other-resources.md)
 
 ## Building Blocks
