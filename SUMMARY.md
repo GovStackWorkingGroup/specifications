@@ -96,6 +96,10 @@
 * [Scheduler](https://govstack.gitbook.io/bb-scheduler/v/skd-23q4)
 * [Workflow](https://govstack.gitbook.io/bb-workflow/v/wf-23q4)
 
+***
+
+* [Cloud Infrastructure](https://govstack.gitbook.io/cloud-infrastructure)
+
 ## Use Cases
 
 * [Reference Use Cases](https://govstack.gitbook.io/use-cases/v/ruc-23q4)
