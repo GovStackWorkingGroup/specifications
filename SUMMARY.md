@@ -93,7 +93,7 @@
 
 ***
 
-* [Cloud Infrastructure](https://govstack.gitbook.io/cloud-infrastructure)
+* [Cloud Infrastructure](https://govstack.gitbook.io/bb-cloud-infrastructure)
 
 ## Use Cases
 
