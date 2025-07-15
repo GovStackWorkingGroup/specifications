@@ -17,4 +17,4 @@ description: >-
 
 ## 9.3 Links and Additional Resources
 
-[A list of links and resources relevant to the Security Specification ](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/256835654/Additional+Resources+Security)
+[A list of links and resources relevant to the Security Specification](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/256835654/Additional+Resources+Security)

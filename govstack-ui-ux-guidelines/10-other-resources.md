@@ -1,4 +1,4 @@
-# 9 Other Resources
+# 7 Other Resources
 
 ## 9.1 UX/UI switching guidance
 
@@ -10,11 +10,10 @@
 
 ## 9.3 Future Considerations
 
-[A list of users flows and patterns to add to these UX/UI specifications in the future ](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/373752067/Future+scope)
+[A list of users flows and patterns to add to these UX/UI specifications in the future](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/373752067/Future+scope)
 
 [A list of topics that may be relevant to future versions of this Building Block](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/265027591/Future+Considerations).
 
-## 9.4 Out-of-Scope Assumptions&#x20;
+## 9.4 Out-of-Scope Assumptions
 
 [A list of functions out of the scope of this Building Block](https://govstack-global.atlassian.net/l/cp/8EvM0Gt9).
-

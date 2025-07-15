@@ -15,7 +15,7 @@ The best tools evolve from empathizing, understanding and designing for the need
 
 Each use case is composed of a collection of modules, or building blocks. As you can see, a relatively small set of these building blocks can be readily applied to a wide variety of applications in low-resource settings.
 
-### 4.1.2 Open <a href="#_hj7wrge29nf5" id="_hj7wrge29nf5"></a>
+### 4.1.2 Open <a href="#hj7wrge29nf5" id="hj7wrge29nf5"></a>
 
 Where possible, GovStack advocates for the use of open technology, which can reduce cost and help avoid vendor lock-in. Open technology can be defined as:
 
@@ -25,7 +25,7 @@ Where possible, GovStack advocates for the use of open technology, which can red
 * Supports open development, see [https://standard.publiccode.net/](https://standard.publiccode.net)
 * Cloud native where possible (Docker/Docker Compose/OCI containers)
 
-### 4.1.3 Sustainable <a href="#_5fv1ildee3ef" id="_5fv1ildee3ef"></a>
+### 4.1.3 Sustainable <a href="#id-5fv1ildee3ef" id="id-5fv1ildee3ef"></a>
 
 Any Building Blocks should be developed in a manner which is sustainable and ensures that the technology will continue to be updated and maintained. Some core considerations for sustainability are:
 
@@ -33,9 +33,9 @@ Any Building Blocks should be developed in a manner which is sustainable and ens
 * Continuous funding for maintenance, development and evolution, which results in lower long-term costs
 * Uses microservices-based architecture instead of monolithic.
   * This increases interoperability, development and deployment speed and reliability.
-  * From Wikipedia: a variant of the[ ](https://en.wikipedia.org/wiki/Service-oriented\_architecture)[service-oriented architecture](https://en.wikipedia.org/wiki/Service-oriented\_architecture) (SOA) structural style – arranges an application as a collection of[ ](https://en.wikipedia.org/wiki/Loose\_coupling)[loosely coupled](https://en.wikipedia.org/wiki/Loose\_coupling) services. In a microservices architecture, services are fine-grained and the protocols are lightweight.
+  * From Wikipedia: a variant of the[ ](https://en.wikipedia.org/wiki/Service-oriented_architecture)[service-oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture) (SOA) structural style – arranges an application as a collection of[ ](https://en.wikipedia.org/wiki/Loose_coupling)[loosely coupled](https://en.wikipedia.org/wiki/Loose_coupling) services. In a microservices architecture, services are fine-grained and the protocols are lightweight.
 
-### 4.1.4 Secure <a href="#_1tvbgx5xc0is" id="_1tvbgx5xc0is"></a>
+### 4.1.4 Secure <a href="#id-1tvbgx5xc0is" id="id-1tvbgx5xc0is"></a>
 
 With any technology deployment, security is paramount. Detailed security requirements are defined in the [GovStack Security Requirements](https://govstack.gitbook.io/specification/security-requirements). Beyond those standards, Building Blocks should have the following attributes:
 
@@ -46,7 +46,7 @@ With any technology deployment, security is paramount. Detailed security require
 * Public ratings and reviews
 * Comprehensive logging and exception handling
 
-### 4.1.5 Accessible <a href="#_64y5ys9r1wf3" id="_64y5ys9r1wf3"></a>
+### 4.1.5 Accessible <a href="#id-64y5ys9r1wf3" id="id-64y5ys9r1wf3"></a>
 
 It is vitally important that technology solutions be usable by _all_. Some characteristics of accessible design include:
 
@@ -56,7 +56,7 @@ It is vitally important that technology solutions be usable by _all_. Some chara
 * Community-driven development tools for documentation and support
 * Blueprints, templates and documentation
 
-### 4.1.6 Flexible <a href="#_ul5nalat80jf" id="_ul5nalat80jf"></a>
+### 4.1.6 Flexible <a href="#ul5nalat80jf" id="ul5nalat80jf"></a>
 
 GovStack is rooted in the concept that Building Blocks should be re-usable and configurable, such that they can support multiple use cases with minimal effort:
 
@@ -67,7 +67,7 @@ GovStack is rooted in the concept that Building Blocks should be re-usable and c
 * Standardized configuration and communications protocols should be used to connecting Building Blocks
 * Building Blocks can be provided as a service (ICT opportunity)
 
-### 4.1.7 Robust <a href="#_jgyljayvwagf" id="_jgyljayvwagf"></a>
+### 4.1.7 Robust <a href="#jgyljayvwagf" id="jgyljayvwagf"></a>
 
 Deployments of Building Blocks should follow these principles:
 
@@ -80,13 +80,11 @@ Deployments of Building Blocks should follow these principles:
 * Asynchronous communications pattern decoupled through rooms is ideal
 * Eventual consistency for data
 
-
-
 ## 4.2 Considerations
 
 As with any software implementation, there are constraints and limitations in the GovStack approach that must be addressed. In any country context, there will be deficiencies that present challenges to any technology implementation. In the context of GovStack, the constraints and deficiencies that may be present must be considered at the outset of any project.
 
-&#x20;The following list of potential deficiencies that may be encountered with high-level descriptions should be kept in mind during the development and deployment of any Building Block. Each building block specification SHOULD specify mitigations for these issues:
+The following list of potential deficiencies that may be encountered with high-level descriptions should be kept in mind during the development and deployment of any Building Block. Each building block specification SHOULD specify mitigations for these issues:
 
 #### 4.2.1 ICT Governance
 
@@ -136,7 +134,4 @@ New technologies treated with suspicion in local communities especially if prior
 
 New technologies are seen as a challenge to cultural traditions and communal activities. Technology can also face barriers such as language, role of women in the society, lack of entrepreneurs or dependencies created by decades of development aid
 
-
-
 Additionally, the Principles for Digital Development are especially relevant when designing for low resource setting. Refer to [https://digitalprinciples.org/](https://digitalprinciples.org) for information on these Principles.
-

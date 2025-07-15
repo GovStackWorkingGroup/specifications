@@ -10,9 +10,9 @@ Some key principles from these design guidelines are as follows:
 
 * APIs MUST not include Personally Identifiable Information (PII) or session keys in URLs - use POST or other methods for this
 * MUST support caching/retries
-* Resource identification in requests Individual resources are identified in requests, for example using [URIs ](https://en.wikipedia.org/wiki/Uniform\_resource\_identifier)in RESTful Web services. The resources themselves are conceptually separate from the representations that are returned to the client. For example, the server could send data from its database as [HTML](https://en.wikipedia.org/wiki/HTML), [XML ](https://en.wikipedia.org/wiki/XML)or as [JSON](https://en.wikipedia.org/wiki/JSON)—none of which are the server's internal representation.
+* Resource identification in requests Individual resources are identified in requests, for example using [URIs ](https://en.wikipedia.org/wiki/Uniform_resource_identifier)in RESTful Web services. The resources themselves are conceptually separate from the representations that are returned to the client. For example, the server could send data from its database as [HTML](https://en.wikipedia.org/wiki/HTML), [XML ](https://en.wikipedia.org/wiki/XML)or as [JSON](https://en.wikipedia.org/wiki/JSON)—none of which are the server's internal representation.
 * Resource manipulation through representations. When a client holds a representation of a resource, including any [metadata ](https://en.wikipedia.org/wiki/Metadata)attached, it has enough information to modify or delete the resource's state.
-* Self-descriptive messages Each message includes enough information to describe how to process the message. For example, which parser to invoke can be specified by a [media type](https://en.wikipedia.org/wiki/Media\_type).
+* Self-descriptive messages Each message includes enough information to describe how to process the message. For example, which parser to invoke can be specified by a [media type](https://en.wikipedia.org/wiki/Media_type).
 
 ## 5.2 Follow TM Forum Specification REST API Design Guidelines Parts 2-7 (RECOMMENDED) <a href="#id-19suuzwtdje" id="id-19suuzwtdje"></a>
 
@@ -70,7 +70,7 @@ When Building Blocks require callback functionality, they must use webhooks and 
 
 ## 5.12 Enforce Transport Security (REQUIRED)
 
-All Building Blocks MUST support secure HTTPS transport with latest TLS and insecure cyphers disabled.
+All Building Blocks MUST support secure HTTPS transport with TLS 1.3 and insecure cyphers disabled.
 
 ## 5.13 GET and PUT APIs must be Idempotent (REQUIRED)
 

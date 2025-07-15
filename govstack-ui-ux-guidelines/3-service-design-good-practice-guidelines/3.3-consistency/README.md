@@ -12,7 +12,7 @@ description: Create user-friendly services that build trust
 
 [Implement a consistent style guide](3.3.2.1-implement-a-consistent-style-guide.md)
 
-[Use design patterns](3.3.2.2-use-design-patterns.md)
+[Use design patterns](broken-reference)
 
 [Use a frontend framework](3.3.2.3-use-a-frontend-framework.md)
 

@@ -2,7 +2,7 @@
 
 In order to enable the delivery of GovStack use cases, a mechanism must be defined that provides the appropriate level of access to the various building blocks by different users and organizations. This includes defining information sharing across service or organizational boundaries, enforcing appropriate roles and permissions for users, allowing user session information to be passed between building blocks, and enforcing secure access between Building Blocks (either co-located within a service, or across applications/organizations using an Information Mediator).
 
-_Note: Additional technical detail and example scenarios can be found in this_ [Authentication and Cross-BB Authorization](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/239370263/Authentication+and+Cross-BB+Authorization) _document_&#x20;
+_Note: Additional technical detail and example scenarios can be found in this_ [Authentication and Cross-BB Authorization](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/239370263/Authentication+and+Cross-BB+Authorization) _document_
 
 ### 7.1 Key Requirements <a href="#key-requirements" id="key-requirements"></a>
 
@@ -29,7 +29,7 @@ _Note: Additional technical detail and example scenarios can be found in this_ [
 
 ### 7.3 User Role and Permission Management
 
-Within a GovStack implementation, an Identity and Access Management (IAM) or Role-Based Access Control (RBAC) system must be in place. This will define the level of access and permissions that a particular user (or group of users) will have within the GovStack system. The requirements for IAM/RBAC are described in Section 8.2 of this security specification&#x20;
+Within a GovStack implementation, an Identity and Access Management (IAM) or Role-Based Access Control (RBAC) system must be in place. This will define the level of access and permissions that a particular user (or group of users) will have within the GovStack system. The requirements for IAM/RBAC are described in Section 8.2 of this security specification
 
 ### 7.4 Definitions <a href="#definitions" id="definitions"></a>
 

@@ -1,6 +1,6 @@
-# 8 UI Switching and Handover
+# 8 UX Switching and Handover
 
-Govstack architecture enables an application to call services of another application within Govstack and get responses containing information from the called application. In many cases, control over the User Interface may need to be passed from an application to another Building Block. For example, if a user is doing a biometric or multi-factor authentication, the ID Building Block can present the UI to the user for that process. If a user is sending or receiving a payment, the UI can be handed off to the Payment Building Block for the user to enter account information for the payment. In general UI level switching may be necessary because
+Govstack architecture enables an application to call services of another application within Govstack and get responses containing information from the called application. In many cases, control over the User Interface may need to be passed from an application to another Building Block. For example, if a user is doing a biometric or multi-factor authentication, the ID Building Block can present the UX to the user for that process. If a user is sending or receiving a payment, the UX can be handed off to the Payment Building Block for the user to enter account information for the payment. In general UI level switching may be necessary because
 
 a. The called service may collect inputs from the user directly through its own UI as it is not preferred to exposed collected data collection to the calling application for security reasons.
 
@@ -12,7 +12,7 @@ If the applications needing a service and the application providing the service 
 
 Considering for example, a citzen already registered in a Govstack logs into the energy deparment's application to pay an eletricity bill. The application will submit the user's login credentials to an Identity server at its backend and gets in return a session token for that user, if authenticated successfully. On its UI the application presents a due electricity bill along with "Pay" button. When the user clicks the "pay" button, the application UI redirects the user to a payment building block ui to collect relevant payment. After payment is remitted the payment building block redirects back to the Energy dept application to confirm successful payment after which the application may present a receipt generated for the user.
 
-Given that context, the following ways are possible for UI switching:
+Given that context, the following ways are possible for UX switching:
 
 **1. OpenID Connect based Single Sign-On (SSO)**
 
@@ -22,8 +22,7 @@ A Single Sign On (SSO) system can be used, which allows an authentication token 
 
 <img src="../.gitbook/assets/file.excalidraw (2).svg" alt="" class="gitbook-drawing">
 
-```mermaid
-sequenceDiagram
+{% @mermaid/diagram content="sequenceDiagram
 user(client/Browser)->>Webserver_App1: Submit Login <br>credentials 
 Webserver_App1->>App1: Login request<br>{credentials)
 App1->>ID_Server: authentication <br>request{credentials}
@@ -49,8 +48,7 @@ alt: if authentication is <br>successful:
 else 
    App1->>Webserver_App1: login failure message
    Webserver_App1->>user(client/Browser): show failure
-end
-```
+end" %}
 
 This mechanism has some inherent advantages such as:
 
@@ -76,8 +74,7 @@ In this case the calling application UI has an embedded screen component (iframe
 
 <img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
 
-```mermaid
-sequenceDiagram
+{% @mermaid/diagram content="sequenceDiagram
 user(client/browser)->>App1_Webserver: Submit login <br> credentials 
 App1_Webserver->>App1:{login credentials}
 App1->>ID_Server: Request authentication<br>{credentials}
@@ -105,8 +102,7 @@ alt: if auth is <br>successful:
       end
     end
 else show login failure
-end
-```
+end" %}
 
 Assuming the user has already logged into the parent (calling) application, then some action in the main application screen (like clicking "pay" button may invoke the iframe, the application verifies role based access permissions of the user to invoke payment BB service and then transfer control to the IFRAME, which inturn invokes the UI of the called application/BB which is linked to the iframe at build time. The Payment BB receives the request, presents its ui in the iframe and finishing its business it posts a status update event in the IFRAME with relevant details. The IFRAME relays the event to calling application and then the application will process the details and further steps appropriately.
 
@@ -132,8 +128,7 @@ This method involves generating and exchanging dynamically generated key between
 
 <img src="../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
 
-```mermaid
-sequenceDiagram
+{% @mermaid/diagram content="sequenceDiagram
 user(client/Browser)->>App1_Webserver: Submit login <br> credentials 
 App1_Webserver->>App1:Credentials
 App1->>ID_Server: Request authentication<br>{credentials}
@@ -162,8 +157,7 @@ alt: if user authentication is <br>successful:
       end
    end
 else show failure message
-end
-```
+end" %}
 
 This mechanism has some advantages:
 
@@ -189,8 +183,7 @@ This is a combination of openID connect and Token based connect models and hence
 
 <img src="../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
 
-```mermaid
-sequenceDiagram
+{% @mermaid/diagram content="sequenceDiagram
 user(client/Browser)->>App1_Webserver: Submit Login <br>credentials 
 App1_Webserver->>App1: Login request<br>{credentials)
 App1->>ID_Server: authentication <br>request{credentials}
@@ -222,7 +215,6 @@ alt: if authentication is <br>successful:
       end
    end
 else show failure message
-end
-```
+end" %}
 
 Any of these mechanisms may be used, depending on the implementation. In general GovStack recommends option 1 or option 4.

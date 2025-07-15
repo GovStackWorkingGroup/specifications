@@ -20,4 +20,4 @@ description: Making decisions based on needs
 
 [Test across platforms](3.4.3.1-test-across-platforms.md)
 
-[Design cross-channel ](3.4.3.2-design-cross-channel.md)
+[Design cross-channel](3.4.3.2-design-cross-channel.md)

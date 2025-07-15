@@ -9,7 +9,7 @@ Used for encoding text\
 
 ## 7.2 ISO8601/UTC
 
-Used for dates and timestamps [https://en.wikipedia.org/wiki/ISO\_8601#Coordinated\_Universal\_Time\_(UTC)](https://en.wikipedia.org/wiki/ISO\_8601#Coordinated\_Universal\_Time\_\(UTC\))
+Used for dates and timestamps [https://en.wikipedia.org/wiki/ISO\_8601#Coordinated\_Universal\_Time\_(UTC)](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_\(UTC\))
 
 ## 7.3 JSON
 
@@ -27,14 +27,15 @@ Used for implementing APIs
 
 {% embed url="https://en.wikipedia.org/wiki/Representational_state_transfer" %}
 
-## 7.6 OpenAPI (AKA Swagger)
+## 7.6 OpenAPI 3.1 (AKA Swagger)
 
-Used for specifying and documenting APIs. Use latest version: [https://swagger.io/specification/](https://swagger.io/specification/)\
+Used for specifying and documenting APIs.\
+[https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md)\
 Note that OpenAPI 3.1 supports inline JSONSchema for model definitions
 
 ## 7.7 Docker/Docker Compose/OCI Containers
 
-Used for packaging building block components for deployment [https://en.wikipedia.org/wiki/Docker\_(software)](https://en.wikipedia.org/wiki/Docker\_\(software\))\
+Used for packaging building block components for deployment [https://en.wikipedia.org/wiki/Docker\_(software)](https://en.wikipedia.org/wiki/Docker_\(software\))\
 [https://www.docker.com/resources/what-container](https://www.docker.com/resources/what-container)
 
 ### 7.8 QR code

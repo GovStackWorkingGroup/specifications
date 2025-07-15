@@ -1,8 +1,8 @@
 # 2 Description
 
-The Security Requirements document provides cross-cutting guidance for any GovStack implementation, whether an individual Building Block or a full GovStack solution to address one or more use cases. It provides a reference for security concerns and requirements for how to implement and deploy secure solutions.&#x20;
+The Security Requirements document provides cross-cutting guidance for any GovStack implementation, whether an individual Building Block or a full GovStack solution to address one or more use cases. It provides a reference for security concerns and requirements for how to implement and deploy secure solutions.
 
-This document also describes a set of 'Authorization Services' that should be implemented for any GovStack implementation. The authorization services provide secure communication between building blocks as well as a mechanism for user authentication and definition of roles and permissions for users.&#x20;
+This document also describes a set of 'Authorization Services' that should be implemented for any GovStack implementation. The authorization services provide secure communication between building blocks as well as a mechanism for user authentication and definition of roles and permissions for users.
 
 ## 2.1 Cross-Cutting Security Requiremetns
 

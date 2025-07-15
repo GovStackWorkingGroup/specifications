@@ -30,7 +30,7 @@ A general description and/or discussion of the issue that needs to be addressed 
 **Description:** Authentication and Authorization MUST be addressed across the board. It is likely to be built-in to API Management and Gateway and accessed by mobile and web applications using a token based approach. All communications from all clients (web/mobile/BB clients etc.) MUST be via API so this is a sensible point of implementation given the stateless nature of applications. Authentication and authorization MUST also be addressed at an application access level for each and every application (web/mobile/desktop etc). It would be wise to utilize the same framework and capabilities for this.\
 **Comments:** Each building block MUST implement centralized authentication and authorization (minimally proxied or implemented via the common IAM solution and/or API Management and Gateway services).
 
-#### 4.2.1.2 Multi-Factor Token and Password Strength/Complexity Management&#x20;
+#### 4.2.1.2 Multi-Factor Token and Password Strength/Complexity Management
 
 **Organizational Risk Rating:** High\
 **Target Deployment Phase:** First\
@@ -130,9 +130,8 @@ Web/Mobile UI<->API, Web/Mobile UI,<->Auth, BB<->API<->BB, Workflow<->API\
 **Target Deployment Phase:** First\
 **Feasibility for Limited/Low Resource Settings:** High\
 **Building Block Mappings:** Cloud Infrastructure and Hosting\
-**Description:** Infrastructure oriented but could be addressed at least in part by software defined networking (SDN) which can be part of a modern PaaS such as OKD \
-**Comments:** Each building block shall comply with the overall secure networking architecture that will be deployed in place with each country implementation. Issues such as network security, networking protocols and firewall implementations etc. shall be defined as a part of the recommended architecture showing the various zones and separations required.\
-
+**Description:** Infrastructure oriented but could be addressed at least in part by software defined networking (SDN) which can be part of a modern PaaS such as OKD\
+**Comments:** Each building block shall comply with the overall secure networking architecture that will be deployed in place with each country implementation. Issues such as network security, networking protocols and firewall implementations etc. shall be defined as a part of the recommended architecture showing the various zones and separations required.\\
 
 **4.2.2.4 Application Services Security (multi-tenancy etc.)**
 
@@ -170,7 +169,7 @@ Web/Mobile UI<->API, Web/Mobile UI,<->Auth, BB<->API<->BB, Workflow<->API\
 **Description:** Can be sourced from open source tooling such as OpenVAS, Wireshark etc.\
 **Comments:** A suite of open source tools are to be adopted for the purposes of Network Vulnerability Scanning. These tools MUST be acquired by the project and centrally deployed in each country to ensure adequate network service security is in place.
 
-#### **4.2.2.7** Software Defined Networking and Network Slicing&#x20;
+#### **4.2.2.7** Software Defined Networking and Network Slicing
 
 **Organizational Risk Rating:** Medium\
 **Target Deployment Phase:** First\
@@ -212,7 +211,7 @@ Web/Mobile UI<->API, Web/Mobile UI,<->Auth, BB<->API<->BB, Workflow<->API\
 **Target Deployment Phase:** First\
 **Feasibility for Limited/Low Resource Settings:** High\
 **Building Block Mappings:** All\
-**Description:** Can be addressed as part and parcel of a modern PaaS solution such as OKD (which has secure encrypted stores for credentials) \
+**Description:** Can be addressed as part and parcel of a modern PaaS solution such as OKD (which has secure encrypted stores for credentials)\
 **Comments:** Each building block MUST adopt the facilities of the chosen PaaS for implementing Cloud Platform Configuration Management and Securing Configurations. For example authentication credentials for common components like databases need to be managed appropriately and simply across multiple environments through DevOps automated deployment etc.
 
 #### **4.2.2.12** Insider threats and internal audit-ability
@@ -221,7 +220,7 @@ Web/Mobile UI<->API, Web/Mobile UI,<->Auth, BB<->API<->BB, Workflow<->API\
 **Target Deployment Phase:** First\
 **Feasibility for Limited/Low Resource Settings:** High\
 **Building Block Mappings:** Security\
-**Description:** The same security protocols, data encryption, protections and monitoring to be applied consistently both internally and externally. \
+**Description:** The same security protocols, data encryption, protections and monitoring to be applied consistently both internally and externally.\
 **Comments:** Each building block MUST adopt the same consistent security and privacy implementation measures to protect against Insider threats and internal audit-ability as those adopted for external exposures. This is a general statement.
 
 #### **4.2.2.13** Denial of service attack prevention
@@ -302,7 +301,7 @@ Web/Mobile UI<->API, Web/Mobile UI,<->Auth, BB<->API<->BB, Workflow<->API\
 **Target Deployment Phase:** First\
 **Feasibility for Limited/Low Resource Settings:** High\
 **Building Block Mappings:** Security\
-**Description:** By virtue of the fact that each BB will host its own UI there is strong potential for cross-site scripting vulnerabilities. Rules must be adhered to by developers. For example, all DOM based XSS reflection or embedding must be performed on the server side not in the ECMA layer. Several other rules must also be implemented for developers to reduce the likelihood of XSS vulnerabilities. Many of these rules can be found here on the OWASP web site: [https://cheatsheetseries.owasp.org/cheatsheets/Cross\_Site\_Scripting\_Prevention\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Cross\_Site\_Scripting\_Prevention\_Cheat\_Sheet.html)\
+**Description:** By virtue of the fact that each BB will host its own UI there is strong potential for cross-site scripting vulnerabilities. Rules must be adhered to by developers. For example, all DOM based XSS reflection or embedding must be performed on the server side not in the ECMA layer. Several other rules must also be implemented for developers to reduce the likelihood of XSS vulnerabilities. Many of these rules can be found here on the OWASP web site: [https://cheatsheetseries.owasp.org/cheatsheets/Cross\_Site\_Scripting\_Prevention\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)\
 **Comments:** The project must provide a consistent set of rules for cross site scripting across all building blocks to ensure that it is not exposed to Cross-site Scripting (XSS) Attacks. This is a complex area that must be addressed during development and testing. Details of many of the rules that must be implemented can be found on the OWASP web site.
 
 #### **4.2.2.22** Replication and Perimeter/Edge Data and Services Security
@@ -596,8 +595,4 @@ CUI MUST be managed in accordance with NIST [SP 800-171 Rev. 2](https://csrc.nis
 **Building Block Mappings:** Security\
 **Description:** See above - requires a physically separate domain for hosting such information.\
 **Comments:** This is related to the above but the project SHOULD provide Controlled Unclassified Information (CUI) domain isolation (isolation for sub-networks and security domains etc. handling CUI).\
-\
-
-
-
-
+\\

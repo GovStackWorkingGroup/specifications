@@ -34,8 +34,7 @@ Adaptors may transform data formats (ie. XML to json), may transform URLs/protoc
 
        _Note: async and/or complex transactions would require the use of the Workflow Building Block_
 
-Please refer to [this document](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/215318576/Adaptor+Concept) for additional context/information and example scenarios for adaptors. \
-
+Please refer to [this document](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/215318576/Adaptor+Concept) for additional context/information and example scenarios for adaptors. \\
 
 ### 6.2 Native GovStack Implementation
 
@@ -49,24 +48,22 @@ Here, citizens and existing applications are provided API access for requests in
 
 ### 6.3 GovStack Testing Harness
 
-The GovStack team has created a testing platform that allows existing products to validate their APIs against the GovStack specifications. The testing platform consists of a set of tests (written in Gherkin) that can be run against one or more candidate products. These tests are run on a Continuous Integration (CI) platform and are executed automatically whenever changes are made to the GitHub repository for the Building Block.&#x20;
+The GovStack team has created a testing platform that allows existing products to validate their APIs against the GovStack specifications. The testing platform consists of a set of tests (written in Gherkin) that can be run against one or more candidate products. These tests are run on a Continuous Integration (CI) platform and are executed automatically whenever changes are made to the GitHub repository for the Building Block.
 
-The test platform will provide a detailed output of the test results, showing which tests are passing and failing for each candidate product.&#x20;
+The test platform will provide a detailed output of the test results, showing which tests are passing and failing for each candidate product.
 
 The testing platform can be accessed at [https://testing.govstack.global](https://testing.govstack.global)
 
 #### 6.3.1 Adding a new test to the Harness
 
-New tests may be created for a Building Block. These tests are stored in the 'test' directory of the Building Block GitHub repository (GitHub repositories for the various Building Blocks can be found [here](https://github.com/GovStackWorkingGroup)). A new tests can be added by creating a .feature file in the features directory. All tests are written using Gherkin. Note that supporting code to run these tests should be stored in the 'support' folder under features.&#x20;
+New tests may be created for a Building Block. These tests are stored in the 'test' directory of the Building Block GitHub repository (GitHub repositories for the various Building Blocks can be found [here](https://github.com/GovStackWorkingGroup)). A new tests can be added by creating a .feature file in the features directory. All tests are written using Gherkin. Note that supporting code to run these tests should be stored in the 'support' folder under features.
 
-New tests will automatically be run when a test cycle is started for a Building Block.&#x20;
+New tests will automatically be run when a test cycle is started for a Building Block.
 
 #### 6.3.2 Adding a new product to the Test Harness
 
-A new candidate product can be integrated into the test harness by adding a new folder to the 'examples' directory of the Building Block GitHub repository (GitHub repositories for the various Building Blocks can be found [here](https://github.com/GovStackWorkingGroup)).&#x20;
+A new candidate product can be integrated into the test harness by adding a new folder to the 'examples' directory of the Building Block GitHub repository (GitHub repositories for the various Building Blocks can be found [here](https://github.com/GovStackWorkingGroup)).
 
-The 'examples' folder provides configuration files that will launch the product in the test (CI) environment using docker and docker compose. Testing a new product requires the addition of a new Dockerfile (or set of Dockerfiles) that will build the product, and a docker-compose file and docker-entrypoint.sh file that will launch and configure the product in the test environment so that it is ready to receive the test requests.&#x20;
+The 'examples' folder provides configuration files that will launch the product in the test (CI) environment using docker and docker compose. Testing a new product requires the addition of a new Dockerfile (or set of Dockerfiles) that will build the product, and a docker-compose file and docker-entrypoint.sh file that will launch and configure the product in the test environment so that it is ready to receive the test requests.
 
-
-
-For more detailed information on how to create new tests or integrate new products into the test harness, please refer to [this document](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/221085697/Steps+to+check+compliance+against+a+GovStack+API+spec), which is geared toward developers and technical teams.&#x20;
+For more detailed information on how to create new tests or integrate new products into the test harness, please refer to [this document](https://govstack-global.atlassian.net/wiki/spaces/GH/pages/221085697/Steps+to+check+compliance+against+a+GovStack+API+spec), which is geared toward developers and technical teams.

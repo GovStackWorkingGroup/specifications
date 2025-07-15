@@ -110,7 +110,7 @@ See the section of this document dealing with [OSINT tools](5-cross-cutting-requ
 
 The resource model shows the relationship between data objects that are used by this Building Block. The following resource model depicts the basic elements of identity and access management (IAM) solutions required organized into domains:
 
-![](../.gitbook/assets/image1.png)
+![](<../.gitbook/assets/image1 (1) (1).png>)
 
 ### 5.27.2 Data Elements <a href="#docs-internal-guid-396d89e5-7fff-e3e8-ad44-66086dd2bb92" id="docs-internal-guid-396d89e5-7fff-e3e8-ad44-66086dd2bb92"></a>
 
@@ -375,7 +375,7 @@ GET
 
 **Parameters**
 
-token: token should be created via [Create token](https://docs.openiam.com/docs-5.1.14/html/API/RESTful/oauth-request.htm?tocpath=API%20Guide%7CPart%20I%3A%20RESTful%20web%20services%20API%7C5.%20OAuth%20request%20list%7C\_\_\_\_\_0#token-create).
+token: token should be created via [Create token](https://docs.openiam.com/docs-5.1.14/html/API/RESTful/oauth-request.htm?tocpath=API%20Guide%7CPart%20I%3A%20RESTful%20web%20services%20API%7C5.%20OAuth%20request%20list%7C_____0#token-create).
 
 **cURL Example**
 
@@ -455,7 +455,7 @@ POST
 * **client\_id**: webconsole/Access Control/Authentification Providers/\*needed provider\* edit/ Client ID field
 * **grant\_type**: authorization\_code
 * **redirect\_uri**: webconsole/Access Control/Authentification Providers/\*needed provider\* / Redirect Url. Use 'Space' or 'Enter' to separate values field
-* **code**: code should be generated with [Authorization code grant flow](https://docs.openiam.com/docs-5.1.14/html/API/RESTful/oauth-request.htm?tocpath=API%20Guide%7CPart%20I%3A%20RESTful%20web%20services%20API%7C5.%20OAuth%20request%20list%7C\_\_\_\_\_0#auth-code-grant) request.
+* **code**: code should be generated with [Authorization code grant flow](https://docs.openiam.com/docs-5.1.14/html/API/RESTful/oauth-request.htm?tocpath=API%20Guide%7CPart%20I%3A%20RESTful%20web%20services%20API%7C5.%20OAuth%20request%20list%7C_____0#auth-code-grant) request.
 
 Headers
 
@@ -511,7 +511,7 @@ Content-Type=application/x-www-form-urlencoded
 
 **Parameters**
 
-token: token should be created via [Create token](https://docs.openiam.com/docs-5.1.14/html/API/RESTful/oauth-request.htm?tocpath=API%20Guide%7CPart%20I%3A%20RESTful%20web%20services%20API%7C5.%20OAuth%20request%20list%7C\_\_\_\_\_0#token-create).
+token: token should be created via [Create token](https://docs.openiam.com/docs-5.1.14/html/API/RESTful/oauth-request.htm?tocpath=API%20Guide%7CPart%20I%3A%20RESTful%20web%20services%20API%7C5.%20OAuth%20request%20list%7C_____0#token-create).
 
 **cURL Example**
 
@@ -555,7 +555,7 @@ GET
 
 **Parameters**
 
-token: token should be created via [Create token](https://docs.openiam.com/docs-5.1.14/html/API/RESTful/oauth-request.htm?tocpath=API%20Guide%7CPart%20I%3A%20RESTful%20web%20services%20API%7C5.%20OAuth%20request%20list%7C\_\_\_\_\_0#token-create).
+token: token should be created via [Create token](https://docs.openiam.com/docs-5.1.14/html/API/RESTful/oauth-request.htm?tocpath=API%20Guide%7CPart%20I%3A%20RESTful%20web%20services%20API%7C5.%20OAuth%20request%20list%7C_____0#token-create).
 
 **cURL Example**
 
@@ -601,7 +601,7 @@ GET
 
 **Parameters**
 
-token: token should be created via [Create token](https://docs.openiam.com/docs-5.1.14/html/API/RESTful/oauth-request.htm?tocpath=API%20Guide%7CPart%20I%3A%20RESTful%20web%20services%20API%7C5.%20OAuth%20request%20list%7C\_\_\_\_\_0#token-create).
+token: token should be created via [Create token](https://docs.openiam.com/docs-5.1.14/html/API/RESTful/oauth-request.htm?tocpath=API%20Guide%7CPart%20I%3A%20RESTful%20web%20services%20API%7C5.%20OAuth%20request%20list%7C_____0#token-create).
 
 **cURL Example**
 
@@ -628,4 +628,4 @@ curl 'http://dev1.openiamdemo.com:8080/idp/oauth2/userinfo?token=rdSOyor6hqJ2CrQ
 
 ### **4**.27.14 Example API for Defining Resources, Roles, Access and Provisioning <a href="#docs-internal-guid-8c9caf33-7fff-a90a-d642-5ff061f58564" id="docs-internal-guid-8c9caf33-7fff-a90a-d642-5ff061f58564"></a>
 
-The most comprehensive API available for this is delivered by OpenIAM. Unfortunately this API is currently delivered in SOAP. The purpose of this API is to provide 3rd parties the ability to create resources, roles and access within the IAM system. There are multiple options to get this done including batch upload and configuration using the administrative user interface. This would need to be addressed at implementation time using the most practical means. There does not seem to be a current use case for the BB’s to create these types of resources on the fly using the IAM API. The API definitions can be found here: [https://docs.openiam.com/docs-5.1.14/html/docs.htm#API/SOAP/SOAP.htm%3FTocPath%3DAPI%2520Guide%7CPart%2520II%253A%2520SOAP%2520API%2520integration%2520services%7C\_\_\_\_\_0](https://docs.openiam.com/docs-5.1.14/html/docs.htm#API/SOAP/SOAP.htm%3FTocPath%3DAPI%2520Guide%7CPart%2520II%253A%2520SOAP%2520API%2520integration%2520services%7C\_\_\_\_\_0)
+The most comprehensive API available for this is delivered by OpenIAM. Unfortunately this API is currently delivered in SOAP. The purpose of this API is to provide 3rd parties the ability to create resources, roles and access within the IAM system. There are multiple options to get this done including batch upload and configuration using the administrative user interface. This would need to be addressed at implementation time using the most practical means. There does not seem to be a current use case for the BB’s to create these types of resources on the fly using the IAM API. The API definitions can be found here: [https://docs.openiam.com/docs-5.1.14/html/docs.htm#API/SOAP/SOAP.htm%3FTocPath%3DAPI%2520Guide%7CPart%2520II%253A%2520SOAP%2520API%2520integration%2520services%7C\_\_\_\_\_0](https://docs.openiam.com/docs-5.1.14/html/docs.htm#API/SOAP/SOAP.htm%3FTocPath%3DAPI%2520Guide%7CPart%2520II%253A%2520SOAP%2520API%2520integration%2520services%7C_____0)

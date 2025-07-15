@@ -9,7 +9,7 @@
   * [5 Cross-Cutting Requirements](architecture-and-nonfunctional-requirements/5-cross-cutting-requirements.md)
   * [6 Onboarding Products](architecture-and-nonfunctional-requirements/6-onboarding.md)
   * [7 Standards](architecture-and-nonfunctional-requirements/7-standards.md)
-  * [8 UI Switching and Handover](architecture-and-nonfunctional-requirements/8-ux-switching.md)
+  * [8 UX Switching and Handover](architecture-and-nonfunctional-requirements/8-ux-switching.md)
   * [9 Other Resources](architecture-and-nonfunctional-requirements/9-other-resources.md)
 * [Security Requirements](security-requirements/README.md)
   * [2 Description](security-requirements/2-description.md)
@@ -20,11 +20,6 @@
   * [7 Authorization Services](security-requirements/7-auth-services.md)
   * [8 Additional Security Modules](security-requirements/8-additional-security-modules.md)
   * [9 Other Resources](security-requirements/9-other-resources.md)
-* [Digital Sovereignty - Cloud Infrastructure](digital-sovereignty-cloud-infrastructure/README.md)
-  * [Abstract](digital-sovereignty-cloud-infrastructure/abstract.md)
-  * [Digital sovereign cloud technology](digital-sovereignty-cloud-infrastructure/digital-sovereign-cloud-technology.md)
-  * [Digital Sovereignty considerations](digital-sovereignty-cloud-infrastructure/digital-sovereignty-considerations.md)
-  * [Architectural graphics](digital-sovereignty-cloud-infrastructure/architectural-graphics.md)
 * [GovStack UI/UX Guidelines](govstack-ui-ux-guidelines/README.md)
   * [1 Version History](govstack-ui-ux-guidelines/1-version-history.md)
   * [2 Description](govstack-ui-ux-guidelines/2-description.md)
@@ -76,29 +71,27 @@
       * [4.3.8 Asking users for information](govstack-ui-ux-guidelines/4-design-patterns/6-page-templates/7.12-asking-users-for-information.md)
       * [4.3.9 Check answers](govstack-ui-ux-guidelines/4-design-patterns/6-page-templates/7.14-check-answers.md)
       * [4.3.10 Outcome](govstack-ui-ux-guidelines/4-design-patterns/6-page-templates/7.15-outcome.md)
-  * [5 Use-case examples](govstack-ui-ux-guidelines/service-patterns/7-use-case-examples.md)
-  * [6 References](govstack-ui-ux-guidelines/service-patterns/8-references.md)
+  * [5 Use-case examples](govstack-ui-ux-guidelines/7-use-case-examples.md)
+  * [6 References](govstack-ui-ux-guidelines/8-references.md)
   * [7 Other Resources](govstack-ui-ux-guidelines/10-other-resources.md)
 
 ## Building Blocks
 
 * [About Building Blocks](building-blocks/about-building-blocks.md)
-* [Consent](https://govstack.gitbook.io/bb-consent/v/con-23q4)
-* [Digital Registries](https://govstack.gitbook.io/bb-digital-registries/v/dr-23q4)
-* [E-Marketplace](https://govstack.gitbook.io/bb-emarketplace/v/mkt-23q4)
-* [E-Signature](https://govstack.gitbook.io/bb-esignature/v/sig-23q4)
-* [Geographic Information System (GIS)](https://govstack.gitbook.io/bb-gis/v/gis-23q4)
-* [Identity](https://govstack.gitbook.io/bb-identity/v/id-23q4)
-* [Information Mediation](https://govstack.gitbook.io/bb-information-mediation/v/im-23q4)
-* [Messaging](https://govstack.gitbook.io/bb-messaging/v/msg-23q4)
-* [Payments](https://govstack.gitbook.io/bb-payments/v/pay-23q4)
-* [Registration](https://govstack.gitbook.io/bb-registration/v/reg-23q4)
-* [Scheduler](https://govstack.gitbook.io/bb-scheduler/v/skd-23q4)
-* [Workflow](https://govstack.gitbook.io/bb-workflow/v/wf-23q4)
-
-***
-
 * [Cloud Infrastructure](https://govstack.gitbook.io/bb-cloud-infrastructure)
+* [Consent](https://govstack.gitbook.io/bb-consent/)
+* [Digital Registries](https://govstack.gitbook.io/bb-digital-registries/)
+* [E-Marketplace](https://govstack.gitbook.io/bb-emarketplace/)
+* [E-Signature](https://govstack.gitbook.io/bb-esignature/)
+* [Geographic Information System (GIS)](https://govstack.gitbook.io/bb-gis/)
+* [Identity](https://govstack.gitbook.io/bb-identity/)
+* [Information Mediation](https://govstack.gitbook.io/bb-information-mediator)
+* [Messaging](https://govstack.gitbook.io/bb-messaging/)
+* [Payments](https://govstack.gitbook.io/bb-payments/)
+* [Registration](https://govstack.gitbook.io/bb-registration/)
+* [Scheduler](https://govstack.gitbook.io/bb-scheduler/)
+* [Workflow](https://govstack.gitbook.io/bb-workflow/)
+* [Wallet](https://govstack.gitbook.io/bb-wallet)
 
 ## Use Cases
 
@@ -106,7 +99,7 @@
 
 ## Public Administration Ecosystem Reference Architecture (PAERA)
 
-* [PAERA](https://govstack.gitbook.io/paera/)
+* [PAERA](https://govstack.gitbook.io/paera-doc)
 
 ## Tools
 

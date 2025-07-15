@@ -19,13 +19,10 @@ Specifications for how to implement accessible, responsive, multi-modal Building
 * Guidance on technical choices (like how to design for low bandwidth, high latency environments, unreliable connectivity, local storage, local persistence of data security using DOMs, etc.).
 * Patterns for managing client-side validation.
 
-## 2.2 Good practice UI/UX guidelines for Service Design&#x20;
+## 2.2 Good practice UI/UX guidelines for Service Design
 
 The guidelines act as a template checklist for assuring the quality of a service's design and delivery. Each point in the guideline has/links to additional guidance.
 
 ## 2.3 Service patterns
 
 We chose to define high-level service patterns rather than anything more specific like a design system or user interface components, this is to maintain flexibility to work around each organization's needs and existing design assets and front-end frameworks.
-
-
-

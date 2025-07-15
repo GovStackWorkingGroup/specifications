@@ -49,7 +49,7 @@ A Building Block is composed of domain-driven microservices, modeled as closely 
 
 Building Blocks exchange data using lightweight, human-readable data that can easily be extended where needed. Data models and APIs are described in a lightweight manner that’s human-readable, allowing them to be easily and quickly understood and validated.
 
-![](<../.gitbook/assets/image3 (2).png>)
+![](../.gitbook/assets/image3.png)
 
 ## 2.4 Cross-Building Block Communication
 

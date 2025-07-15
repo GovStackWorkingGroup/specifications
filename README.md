@@ -4,4 +4,4 @@ The GovStack initiative aims to build a common understanding and technical pract
 
 Our focus is to enable countries to kickstart their digital transformation journey by adopting, deploying, and scaling digital government services. Through the digital "building blocks" approach, governments can easily create or modify their digital platforms, services, and applications by also simplifying cost, time, and resource requirements.
 
-![](.gitbook/assets/Cover.png)
+![](<.gitbook/assets/Cover (1).png>)
