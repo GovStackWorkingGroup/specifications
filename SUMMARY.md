@@ -80,6 +80,7 @@
 * [About Building Blocks](building-blocks/about-building-blocks.md)
 * [Cloud Infrastructure](https://govstack.gitbook.io/bb-cloud-infrastructure)
 * [Consent](https://govstack.gitbook.io/bb-consent/)
+* [Content Management System](https://govstack.gitbook.io/bb-cms/)
 * [Digital Registries](https://govstack.gitbook.io/bb-digital-registries/)
 * [E-Marketplace](https://govstack.gitbook.io/bb-emarketplace/)
 * [E-Signature](https://govstack.gitbook.io/bb-esignature/)
