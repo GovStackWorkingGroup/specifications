@@ -13,7 +13,7 @@ This section of the document provides a specific list of the concerns, principle
 * How each issue maps to the existing building blocks and their respective working groups
 * What type of organizational risk is anticipated if the issue is not addressed (i.e. high/medium/low)
 * Which target phase of the project the issue must be addressed in (i.e. first/second) - third phases are usually never completed
-* How feasible it is to address the issue in a limited-resource or low-resource setting (predominantly related to costs) - see the [Architecture Blueprint and Non-Functional Requirements](../architecture-and-nonfunctional-requirements/) document for the definitions associated with low-resource settings.
+* How feasible it is to address the issue in a limited-resource or low-resource setting (predominantly related to costs) - see the [Architecture Blueprint and Non-Functional Requirements](/broken/pages/QUmUs4ykoRBjb2LIeu0Z) document for the definitions associated with low-resource settings.
 
 A general description and/or discussion of the issue that needs to be addressed and the various alternatives available for addressing it (not exhaustive). The security issues are organized by the 5 NIST functions (Identify, Protect, Detect, Respond, Recover).
 

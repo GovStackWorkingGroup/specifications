@@ -2,7 +2,7 @@
 
 Any Building Block must follow the security requirements that are outlined in the Cross-Cutting Requirements section of this document. In addition, specific security related functionality should be provided in any GovStack implementation. An API Gateway may be provided to manage communication between building blocks as well as any incoming requests from external systems. The API Gateway will work with the Information Mediator Building Block and provide additional controls and security while coordinating API calls between the application and various Building Blocks.
 
-_Note: The API Gateway functionality is connected to the GovStack Adaptor concept which is described in_ [_Section 6 (Onboarding Products) of the Non-Functional Requirements document_](../architecture-and-nonfunctional-requirements/6-onboarding.md)
+_Note: The API Gateway functionality is connected to the GovStack Adaptor concept which is described in_ [_Section 6 (Onboarding Products) of the Non-Functional Requirements document_](/broken/pages/9GkSq1w7C4R1T0i5DG7P)
 
 Second, some type of Identity and Access Management or Role-Based Access Control should be implemented as part of a GovStack solution, as desribed in Section 7.4 of this Security specification.
 

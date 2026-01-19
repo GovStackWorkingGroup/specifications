@@ -2,15 +2,7 @@
 
 * [GovStack](README.md)
 * [Contributing](contributing.md)
-* [Architecture and Nonfunctional Requirements](architecture-and-nonfunctional-requirements/README.md)
-  * [2 Introduction](architecture-and-nonfunctional-requirements/introduction.md)
-  * [3 GovStack Architecture](architecture-and-nonfunctional-requirements/3-govstack-architecture.md)
-  * [4 Building Block Design Principles and Considerations](architecture-and-nonfunctional-requirements/4-building-block-design-principles.md)
-  * [5 Cross-Cutting Requirements](architecture-and-nonfunctional-requirements/5-cross-cutting-requirements.md)
-  * [6 Onboarding Products](architecture-and-nonfunctional-requirements/6-onboarding.md)
-  * [7 Standards](architecture-and-nonfunctional-requirements/7-standards.md)
-  * [8 UX Switching and Handover](architecture-and-nonfunctional-requirements/8-ux-switching.md)
-  * [9 Other Resources](architecture-and-nonfunctional-requirements/9-other-resources.md)
+* [CFR Architecture](https://govstack.gitbook.io/cfr-architecture/)
 * [Security Requirements](security-requirements/README.md)
   * [2 Description](security-requirements/2-description.md)
   * [3 Terminology](security-requirements/3-terminology.md)
@@ -109,4 +101,4 @@
 ***
 
 * [Release Notes](release-notes/README.md)
-  * [23Q4](release-notes/23q4.md)
+  * [26Q1](release-notes/23q4.md)

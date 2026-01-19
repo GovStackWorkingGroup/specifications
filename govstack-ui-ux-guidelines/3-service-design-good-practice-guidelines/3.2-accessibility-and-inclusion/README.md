@@ -16,6 +16,6 @@ There could be significant interdependencies between UI components for different
 
 [Involve a diverse user group in the design](3.2.2.1-involve-a-diverse-user-group-in-the-design.md)
 
-[Support multiple languages](broken-reference)
+[Support multiple languages](/broken/pages/GcroQ26ytWxsLXJvgOnt)
 
 [Foster a culture of inclusion](3.2.2.3-foster-a-culture-of-inclusion.md)
