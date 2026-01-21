@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Contributing](contributing.md)
+* [Building Blocks](building-blocks.md)
 * [Security Requirements](security-requirements/README.md)
   * [2 Description](security-requirements/2-description.md)
   * [3 Terminology](security-requirements/3-terminology.md)
@@ -65,20 +66,5 @@
   * [5 Use-case examples](govstack-ui-ux-guidelines/7-use-case-examples.md)
   * [6 References](govstack-ui-ux-guidelines/8-references.md)
   * [7 Other Resources](govstack-ui-ux-guidelines/10-other-resources.md)
-
-## Use Cases
-
-* [Reference Use Cases](https://govstack.gitbook.io/use-cases/v/ruc-23q4)
-
-## Public Administration Ecosystem Reference Architecture (PAERA)
-
-* [PAERA](https://govstack.gitbook.io/paera-doc)
-
-## Tools
-
-* [Sandbox](https://sandbox.govstack.global/)
-
-***
-
 * [Release Notes](release-notes/README.md)
   * [26Q1](release-notes/23q4.md)
