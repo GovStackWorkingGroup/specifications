@@ -1,8 +1,7 @@
 # Table of contents
 
-* [GovStack](README.md)
+* [Introduction](README.md)
 * [Contributing](contributing.md)
-* [CFR Architecture](https://govstack.gitbook.io/cfr-architecture/)
 * [Security Requirements](security-requirements/README.md)
   * [2 Description](security-requirements/2-description.md)
   * [3 Terminology](security-requirements/3-terminology.md)
@@ -66,25 +65,6 @@
   * [5 Use-case examples](govstack-ui-ux-guidelines/7-use-case-examples.md)
   * [6 References](govstack-ui-ux-guidelines/8-references.md)
   * [7 Other Resources](govstack-ui-ux-guidelines/10-other-resources.md)
-
-## Building Blocks
-
-* [About Building Blocks](building-blocks/about-building-blocks.md)
-* [Cloud Infrastructure](https://govstack.gitbook.io/bb-cloud-infrastructure)
-* [Consent](https://govstack.gitbook.io/bb-consent/)
-* [Content Management System](https://govstack.gitbook.io/bb-cms/)
-* [Digital Registries](https://govstack.gitbook.io/bb-digital-registries/)
-* [E-Marketplace](https://govstack.gitbook.io/bb-emarketplace/)
-* [E-Signature](https://govstack.gitbook.io/bb-esignature/)
-* [Geographic Information System (GIS)](https://govstack.gitbook.io/bb-gis/)
-* [Identity](https://govstack.gitbook.io/bb-identity/)
-* [Information Mediation](https://govstack.gitbook.io/bb-information-mediator)
-* [Messaging](https://govstack.gitbook.io/bb-messaging/)
-* [Payments](https://govstack.gitbook.io/bb-payments/)
-* [Registration](https://govstack.gitbook.io/bb-registration/)
-* [Scheduler](https://govstack.gitbook.io/bb-scheduler/)
-* [Workflow](https://govstack.gitbook.io/bb-workflow/)
-* [Wallet](https://govstack.gitbook.io/bb-wallet)
 
 ## Use Cases
 

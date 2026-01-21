@@ -6,15 +6,13 @@ Please note we have a [code of conduct](https://www.govstack.global/coc/) that a
 
 The GovStack community understands that there are a wide variety of people from different backgrounds that have valuable insight into the work GovStack is doing. Therefore, we provide multiple ways in which people from those different backgrounds can interact and give us their insight. Here are three:
 
-### 1. Proposing changes via the Give Feedback form
+### 1. Proposing changes by joining our working groups
 
-To ensure giving feedback on the specifications is as accesible as possible to the widest audience, we have created an online form that will take your feeback and direct it to the right people within the project automatically.
+Join the discussion of the working group preparing the next release. The process is as follows:
 
-1. In the navigation menu above, click the Give Feedback link
-2. Enter your contact details so that people in the project can follow up with further questions on your feedback
-3. Note that the page you were browsing has already been entered into the form on your behalf. If this is not the page on which your feedback is relevant, please edit the link as needed
-4. Please give your feedback, remembering to describe the problem as you see it, giving one or more alternative suggestions if you have them, and desccribe why the change is required
-5. On submission, the form will reply with a link to a Jira issue we have automatically created on your behalf. This is where the GovStack project team will work on the feedback. You are welcome and encouraged to register and participate in the discussion in the comments.
+1. Submit the form on [https://govstack.global/join-our-tech-community/](https://govstack.global/join-our-tech-community/)
+2. You will be invited to an onboarding call covering all essentials of the GovStack Community
+3. The respective working group of you interest will invite you to slack, GitBook and meetings
 
 ### 2. Proposing changes via a pull request
 
