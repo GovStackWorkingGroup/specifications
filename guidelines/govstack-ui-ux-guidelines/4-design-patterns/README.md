@@ -4,7 +4,7 @@ description: Get started using design patterns
 
 # 4 Design patterns
 
-<figure><img src="../../.gitbook/assets/How our patterns work 3 (1).png" alt=""><figcaption><p>A diagram showing how the design patterns fit into the service patterns</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/How our patterns work 3 (1).png" alt=""><figcaption><p>A diagram showing how the design patterns fit into the service patterns</p></figcaption></figure>
 
 ## **Considerations for choosing different patterns**
 

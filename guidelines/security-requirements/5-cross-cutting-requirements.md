@@ -110,7 +110,7 @@ See the section of this document dealing with [OSINT tools](5-cross-cutting-requ
 
 The resource model shows the relationship between data objects that are used by this Building Block. The following resource model depicts the basic elements of identity and access management (IAM) solutions required organized into domains:
 
-![](<../.gitbook/assets/image1 (1) (1).png>)
+![](<../../.gitbook/assets/image1 (1) (1).png>)
 
 ### 5.27.2 Data Elements <a href="#docs-internal-guid-396d89e5-7fff-e3e8-ad44-66086dd2bb92" id="docs-internal-guid-396d89e5-7fff-e3e8-ad44-66086dd2bb92"></a>
 
