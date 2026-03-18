@@ -45,5 +45,7 @@ Please browse the building blocks that are specified in this release in the top 
 [Scheduler](https://specs.govstack.global/scheduler)
 
 [Wallet](https://specs.govstack.global/wallet)
+
+[Workflow](https://specs.govstack.global/workflow)
 {% endcolumn %}
 {% endcolumns %}
