@@ -20,8 +20,6 @@ Please browse the building blocks that are specified in this release in the top 
 
 [Consent](https://specs.govstack.global/consent)
 
-[Content Management System](https://specs.govstack.global/content-management-system)
-
 [Digital Registries](https://specs.govstack.global/registries)
 
 [E-Marketplace](https://specs.govstack.global/emarketplace)
